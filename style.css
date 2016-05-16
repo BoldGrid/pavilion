@@ -1,0 +1,861 @@
+/*
+Theme Name: Pavilion
+Author: The BoldGrid Team
+Theme URI: http://www.boldgrid.com/pavilion
+Author URI: http://www.boldgrid.com/the-team
+Description: Designed specifically for use with the BoldGrid suite of plugins, all BoldGrid themes are highly customizable, responsive to a wide range of devices, and of course, beautiful. Every BoldGrid theme includes five pre-selected color palettes and an advanced tool for creating your own unique palette. In addition, all themes feature multiple menu locations and widget areas, which are easily customizable to suit your needs. So if you're looking for a theme that looks great, feels modern and professional, and offers plenty of features to make it your own, you've chosen well.
+Version: 1.16
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: boldgrid-pavilion
+Tags: custom-background, custom-colors, custom-menu, editor-style, responsive-layout, rtl-language-support, translation-ready, boldgrid-theme-34
+*/
+
+/*------------------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+--------------------------------------------------------------------------
+# Base Styles
+	## Background
+	## Positioning
+	## Typography
+	## Titles
+	## Links
+	## Buttons
+	## Et Cetera
+# Header
+# Navigation
+	## Main Menu
+	## Other Menus
+	## Social Menus
+# GridBLocks
+	## Positioning
+	## Alternates
+# Modules
+	## Universal
+	## Global
+	## Alpha
+	## Beta
+	## Gamma
+# Pages
+# Posts
+# Plugins
+	## WooCommerce
+# Footer
+------------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------------
+# Base Styles
+------------------------------------------------------------------------*/
+
+/*-----------------------------------------------
+## Background
+-----------------------------------------------*/
+body,
+.custom-background {
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+}
+
+/* sm */
+@media (min-width: 790px) {
+	.background-shadow {
+		min-height:225px;
+		position: relative;
+	}
+	.background-shadow:after, 
+	.background-shadow:before {
+	    border-width: 2px;
+	    border-style: solid;
+	    content: "";
+	    height: 225px;
+	    top: 0px;
+	    position: absolute;
+	}
+	.background-shadow:after {
+		right: -4px;
+	}
+	.background-shadow:before {
+		left:-4px;
+	}
+}
+
+@media (max-width: 992px) {
+	.background-shadow:after, 
+	.background-shadow:before {
+	    top: -22px;
+	}
+}
+
+/*-----------------------------------------------
+## Positioning
+-----------------------------------------------*/
+.content-area {
+	margin-bottom: 60px;
+	margin-top: -45px;
+}
+
+/*-----------------------------------------------
+## Typography
+-----------------------------------------------*/
+body {
+	font-weight: 400;
+}
+
+/* Navigation */
+#site-navigation {
+	font-weight: 400;
+}
+.secondary-menu a[href]:hover,
+.tertiary-menu a[href]:hover {
+    text-decoration: underline;
+}
+.menu-social li a {
+    text-align: center;
+    -webkit-font-smoothing: antialiased;
+}
+.gridblock .heading-alt {
+	font-weight: 400;
+}
+/* Etc */
+.site-description {
+	font-weight: 500;
+	line-height: 1.5;
+}
+.entry-title {
+	font-family: "Oswald";
+	font-weight: 600;
+	text-align: center;
+}
+.menu-social li.menu-social a {
+    font-size: 10px;
+}
+.mod-beta h2 {
+	font-weight: 400;
+}
+.button-primary,
+.button-secondary,
+input[type="submit"] {
+	font-weight: 400;
+}
+.button-primary:hover,
+.button-primary:focus,
+.button-secondary:hover,
+.button-secondary:focus,
+input[type="submit"]:hover,
+input[type="submit"]:focus {
+	text-decoration: none;
+}
+.call-to-action .button-primary {
+	font-weight: 400;
+}
+.p-button-primary,
+.p-button-secondary {
+	white-space: nowrap;
+}
+.site-title {
+	font-weight: normal;
+}
+#slogan {
+	font-weight: 300;
+	text-align: center;
+}
+.phone p {
+	font-family: "Roboto";
+	font-weight: 500;
+}
+.mod-divider a {
+	font-family: "Oswald";
+	font-weight: 400;
+	text-decoration: none;
+}
+.mod-blockquote p {
+	font-weight: 400;
+	line-height: 30px;
+}
+.mod-alpha h5 {
+	font-weight: 900;
+}
+.mod-alpha p {
+	font-weight: 400;
+	line-height: 1;
+}
+.mod-alpha-1 p {
+	font-weight: 900;
+}
+.mod-alpha .p-button-secondary {
+	white-space: nowrap;
+}
+.mod-icon-box {
+	font-size: 65px;
+	line-height: 130px;
+  	text-align: center;
+}
+.mod-gamma-2 li {
+	font-weight: 400;
+}
+.mod-gamma-2 li:first-child {
+	font-weight: 700;
+}
+.form-submit .submit {
+	font-weight: 300;
+    text-transform: uppercase;
+}
+.woocommerce p.buttons a.button:hover {
+    text-decoration: none;
+}
+.site-footer p,
+.site-info,
+.attribution {
+	font-weight: 300;
+	text-align: center;
+}
+.site-footer a {
+	text-decoration: underline;
+}
+.site-footer a:hover,
+.site-footer a:focus {
+	text-decoration: none;
+}
+/* Always center */
+.phone,
+.mod-divider,
+.mod-beta,
+.mod-beta p {
+	text-align: none;
+}
+
+/* xs */
+.xs-center,
+.mod-img,
+.mod-img-circle,
+.p-button-primary,
+.p-button-secondary,
+.social,
+.heading h3,
+.mod-alpha h5,
+.mod-alpha p,
+.mod-alpha-1 p {
+	text-align: center;
+}
+.navbar-default .navbar-nav,
+.navbar-default .navbar-nav .open .dropdown-menu {
+	text-align: center;
+}
+
+/* sm */
+@media (min-width: 768px) {
+	.navbar-default .navbar-nav,
+	.navbar-default .navbar-nav .open .dropdown-menu {
+		text-align: left;
+	}
+}
+
+/* md */
+@media (min-width: 992px) {
+	.xs-center,
+	.mod-img,
+	.mod-img-circle,
+	.p-button-primary,
+	.p-button-secondary,
+	.social,
+	.heading h3,
+	.mod-alpha h5,
+	.mod-alpha p,
+	.mod-alpha-1 p {
+		text-align: left;
+	}
+}
+
+/*-----------------------------------------------
+## Titles
+-----------------------------------------------*/
+.page-template-page_home .entry-title {
+	display: none;
+}
+.page-title,
+.page-header {
+	margin-top: 0;
+}
+.page-header {
+	padding-top: 20px;	
+}
+.entry-title,
+.mod-beta h3 {
+	margin: 1em 0;
+}
+
+/* Headings */
+h2 i.fa {
+	padding-right: 10px;	
+}
+.hentry {
+	margin: 0 auto;	
+}
+.heading {
+    margin-bottom: 15px;
+}
+.heading h3 {
+    margin-top: 10px;
+}
+
+/* Page Title */
+.entry-title {
+	display: block;
+	margin: 20px 0 60px;
+	position: relative;
+    z-index: 1;
+}
+.entry-title:before {
+	bottom: 0;
+    content:"";
+	left: 0;
+    margin: 0 auto;
+    position: absolute; 
+    right: 0;
+    width: 100%;
+    z-index: -1;
+}
+.entry-title span { 
+    padding: 0 15px;
+}
+
+/*-----------------------------------------------
+## Links
+-----------------------------------------------*/
+
+/*-----------------------------------------------
+## Buttons
+-----------------------------------------------*/
+.button-primary,
+.button-secondary,
+input[type="submit"] {
+	border: none;
+}
+
+/* Icons */
+.button-primary i {
+	padding-left: 5px;
+}
+
+/* Call To Action */
+.call-to-action .button-primary {
+	border: none;
+	margin-left: -15px;
+	padding: 10px 25px;
+}
+
+/* Positioning */
+.p-button-primary,
+.p-button-secondary {
+	margin: 25px 0 50px;
+	padding: 7px 0;
+}
+.button-primary,
+.button-secondary,
+input[type="submit"] {
+	padding: 7px 30px;
+}
+.gridblock .p-button-secondary {
+	margin: -25px 0 50px;
+}
+
+/* Block vs. Inline */
+.button-primary,
+.button-secondary {
+	display: block;
+    margin-top: 15px;
+}
+
+/* sm */
+@media (min-width: 500px) {
+	.button-primary,
+	.button-secondary {
+		display: inline;
+    	margin-top: 0;
+	}
+	.gridblock .p-button-secondary {
+		margin: 25px 0 50px;
+	}
+}
+
+/*-----------------------------------------------
+## Et Cetera
+-----------------------------------------------*/
+hr {
+	border: 0;
+	height: 2px;
+}
+
+/*------------------------------------------------------------------------
+# Header
+------------------------------------------------------------------------*/
+.site-title {
+	margin-left: -15px;
+}
+.site-title a {
+	padding: 5px 15px 10px;
+}
+.site-description {
+    display: inline-block;
+    margin-left: -15px;
+    margin-top: -11px;
+    padding: 8px;
+}
+
+/* Call to Action */
+#slogan {
+	margin: 2em -15px 2px;
+	padding: 30px 15px;
+}
+.call-to-action {
+	margin-bottom: 7em;
+}
+.call-to-action .p-button-primary {
+	margin-top: 0;
+}
+.row.call-to-action-wrapper {
+	min-height: 100px;
+}
+
+/* Social Media */
+.page-content, 
+.entry-content, 
+.entry-summary {
+    margin: 0;
+}
+.social .fa-stack {
+	font-size: 1.5em;
+}
+
+/* Social Phone */
+.phone i {
+	margin-right: 5px;
+}
+.phone-number {
+	margin-left: 5px;
+}
+.entry-header {
+	position: relative;
+	z-indez: 99;
+}
+.phone .h3.alt-font {
+    margin-top: 0;
+}
+
+/* Widgets */
+#header-widget-area {
+    margin: 0;
+}
+
+/* xs */
+.social-media {
+	margin: 25px 0 0 -30px;
+}
+.phone {
+	margin: 15px 0 30px;
+}
+.social {
+	height: 150px;
+}
+
+/* md */
+@media (min-width: 992px) {
+	.social-media {
+		margin: 20px 0 30px -30px;
+	}
+	.phone {
+		float: right;
+		margin: 15px 0 5px;
+	}
+	.social {
+		height: 100px;
+		text-align: left;
+	}
+}
+
+/*------------------------------------------------------------------------
+# Navigation
+------------------------------------------------------------------------*/
+
+/*-----------------------------------------------
+## Main Menu
+-----------------------------------------------*/
+/* Nav Reset */
+.navbar {
+	border: none;
+	/* Border Radius */
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+    border-radius: 0;   
+}
+.navbar-nav > li > .dropdown-menu {
+    border-radius: 0;   
+    padding: 0px;
+}
+.navbar-nav > li > .dropdown-menu a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.navbar-default {
+	margin-bottom: 0;
+}
+.navbar-default .navbar-nav {
+	margin-left: -15px;
+}
+
+/* Links */
+.navbar-default .navbar-nav > li > a {
+    padding: 20px;
+}
+.navbar-default .navbar-nav > li:first-child > a {
+	margin-left: 0;
+}
+
+/*-----------------------------------------------
+## Other Menus
+-----------------------------------------------*/
+.secondary-menu a,
+.tertiary-menu a {
+	padding: 0 5px;
+}
+.pull-right-margin {
+	margin-right: -15px;
+}
+
+/*-----------------------------------------------
+## Social Menus
+-----------------------------------------------*/
+.menu-social ul {
+    padding-left: 0px;
+}
+.menu-social ul li {
+    position: relative;
+    display:  inline-block;    
+}
+.menu-social li a {
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 0.5em;
+    margin-top: 1.25em;
+    vertical-align: top;
+}
+#primary-navbar li.menu-social a[href]:hover,
+li.menu-social a[href]:hover {
+    background: none;
+}
+li.menu-social:after {
+    content: "";    
+}
+
+/*------------------------------------------------------------------------
+# GridBlocks
+------------------------------------------------------------------------*/
+
+/*-----------------------------------------------
+## Positioning
+-----------------------------------------------*/
+.gridblock h1, 
+.gridblock h2, 
+.gridblock h3, 
+.gridblock h4, 
+.gridblock h5, 
+.gridblock h6,
+.gridblock ol, 
+.gridblock ul, 
+.gridblock li,
+.gridblock p {
+	margin: 10px 0;
+}
+
+/*-----------------------------------------------
+## Alternates
+-----------------------------------------------*/
+
+/*------------------------------------------------------------------------
+# Modules
+------------------------------------------------------------------------*/
+
+/*-----------------------------------------------
+## Universal
+-----------------------------------------------*/
+.mod-reset {
+	margin: 0 !important;
+	padding: 0 !important;
+}
+.mod-space,
+.mod-space-2x,
+.mod-space-3x,
+.mod-space-4x,
+.mod-space-5x {
+	background: none;
+}
+.mod-space {
+	height: 15px;
+}
+.mod-space-2x {
+	height: 30px;
+}
+.mod-space-3x {
+	height: 45px;
+}
+.mod-space-4x {
+	height: 60px;
+}
+.mod-space-5x {
+	height: 75px;
+}
+
+/* Images */
+.mod-img,
+.mod-img-circle,
+.image-gallery img,
+.video-gallery img,
+.slideshow-gallery img {
+	margin-bottom: 15px;	
+}
+.mod-img-circle img {
+	border-radius: 50%;
+}
+
+/*-----------------------------------------------
+## Global
+-----------------------------------------------*/
+/* Dividers */
+.mod-divider {
+	margin: 4em 0;
+	padding-top: 13px;
+}
+.mod-divider a {
+	padding: 10px 20px;
+	/* Border Radius */
+	-webkit-border-bottom-right-radius: 7px;
+	-webkit-border-bottom-left-radius: 7px;
+	-moz-border-radius-bottomright: 7px;
+	-moz-border-radius-bottomleft: 7px;
+	border-bottom-right-radius: 7px;
+	border-bottom-left-radius: 7px;
+}
+
+/* Blockquotes */
+.mod-blockquote {
+    padding-left: 20px;
+}
+
+/*-----------------------------------------------
+## Alpha
+-----------------------------------------------*/
+.mod-alpha {
+	border-radius: 5px;
+	padding-bottom: 10px;
+}
+.mod-alpha img {
+	padding: 0;	
+}
+.mod-alpha h5 {
+	margin-bottom: 10px;
+	margin-left: -1px;
+	margin-top: 20px;
+	padding: 0 1.5em;
+}
+.mod-alpha hr {
+	margin: 10px 1.5em;
+}
+.mod-alpha p {
+	padding: 0 1.5em;
+}
+.mod-alpha hr {
+	border: 0;
+	height: 1px;
+}
+.mod-alpha i {
+	padding-right: 15px;
+}
+.mod-alpha .fa-bed {
+	padding-right: 12px;
+}
+.mod-alpha-1 p {
+	margin-bottom: 0;
+	margin-top: 20px;
+}
+.mod-alpha .p-button-secondary {
+	margin: 15px;
+}
+.mod-alpha .button-secondary {
+	border-radius: 3px;
+	font-size: 12px;
+	padding: 7px 15px;
+}
+
+/* xs */
+.mod-alpha {
+	margin-bottom: 1em;
+}
+
+/* md */
+@media (min-width: 992px) {
+	.mod-alpha {
+		margin-bottom: 0;
+	}
+	.mod-alpha .p-button-secondary {
+		margin: 15px 0;
+		padding: 4px;
+	}
+}
+
+/* lg */
+@media (min-width: 1200px) {
+	.mod-alpha .p-button-secondary {
+		margin: 20px auto 10px;
+		padding: 0 1.5em;
+	}
+}
+
+/*-----------------------------------------------
+## Beta
+-----------------------------------------------*/
+.mod-beta {
+	border-radius: 5px;
+	padding: 3em 3em 0;
+}
+.mod-beta hr {
+    margin-top: 0;
+}
+.mod-beta .p-button-primary {
+	margin-bottom: -20px;
+    margin-top: 30px;
+}
+
+/* Icons */
+.mod-beta > .mod-icon-box {
+	margin: -115px auto 0;
+}
+.mod-icon-box {
+  	border-style: double;
+  	height: 130px;
+	overflow: hidden;
+	position: relative;
+	width: 130px;
+	/* Border Radius */
+	-webkit-border-radius: 100px;
+	-moz-border-radius: 100px;
+	-ms-border-radius: 100px;
+	border-radius: 100px;
+}
+.mod-icon-box span {
+	display: block;
+	height: 130px;
+	position: absolute;
+	width: 130px;
+}
+.mod-icon-box span.fa {
+	vertical-align: baseline !important;
+	/* Transform */
+	-webkit-transform: translate(0, 20px);
+	-moz-transform: translate(0, 20px);
+	-o-transform: translate(0, 20px);
+	transform: translate(0, 20px);
+}
+
+/* xs */
+.mod-beta {
+	margin-top: 120px;
+}
+
+/* md */
+@media (min-width: 992px) {
+	.mod-beta {
+		margin-bottom: 2em;
+		margin-top: 60px;
+	}
+}
+
+/*-----------------------------------------------
+## Gamma
+-----------------------------------------------*/
+.mod-gamma {
+	padding-left: 15px;
+	padding-right: 15px;
+}
+.mod-gamma [class*="col-md"] {
+	padding: 0;
+}
+.mod-gamma-1 img {
+	margin-bottom: 30px;
+}
+.mod-gamma-2 ul {
+    list-style: none;
+   	padding-bottom: 32px;
+   	padding-top: 10px;
+}
+.mod-gamma-2 li {
+	margin-left: -20px;
+}
+
+/*------------------------------------------------------------------------
+# Pages
+------------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------------
+# Posts
+------------------------------------------------------------------------*/
+.widget-area {
+    padding: 25px;
+	margin-top: 25px;
+}
+.single .call-to-action {
+	display: none;	
+}
+.post-title-hidden .content-area {
+    margin-top: 0;
+}
+
+/* Comments */
+.comment-form-comment label {
+    float: left;
+    padding-right: 15px;
+}
+
+/* Forms */
+.form-submit .submit {
+    border: medium none;
+	margin-top: 15px;
+    padding: 7px 30px;
+	transition: all .5s;
+}
+
+/*------------------------------------------------------------------------
+# Plugins
+------------------------------------------------------------------------*/
+
+/*-----------------------------------------------
+## WooCommerce
+-----------------------------------------------*/
+.woocommerce .page-title {
+	margin: 0;	
+}
+.woocommerce p.buttons a.button:hover {
+    background-image: none;
+}
+
+/*------------------------------------------------------------------------
+# Footer
+------------------------------------------------------------------------*/
+.site-footer {
+	clear: both;
+	padding: 20px 0;
+}
+.attribution {
+	margin-top: 0;
+}
+
+/** Sticky Footer **/
+html, body, .site, .site-content {
+	height: 100%;
+}
+#boldgrid-sticky-wrap {
+  	min-height: 100%;
+  	height: auto !important;
+  	height: 100%;
+}
