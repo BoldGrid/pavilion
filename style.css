@@ -12,6 +12,10 @@ Template: prime
 Tags: custom-background, custom-colors, custom-menu, editor-style, responsive-layout, rtl-language-support, translation-ready, boldgrid-theme-34
 */
 
+.home .site-content .entry-header {
+	display: none;
+}
+
 /*------------------------------------------------------------------------
 >>> TABLE OF CONTENTS:
 --------------------------------------------------------------------------

@@ -8,6 +8,12 @@ function boldgrid_theme_framework_config( $boldgrid_framework_configs ) {
 	$boldgrid_framework_configs['customizer-options']['typography']['enabled'] = true;
 	$boldgrid_framework_configs['temp']['attribution_links'] = true;
 
+	$boldgrid_framework_configs['boldgrid-parent-theme'] = true;
+	$boldgrid_framework_configs['parent-theme-name'] = 'prime';
+
+	$boldgrid_framework_configs['template']['footer'] = '1';
+	$boldgrid_framework_configs['template']['header'] = '6';
+
 	/**
 	 * Customizer Configs
 	 */
