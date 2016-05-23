@@ -1,18 +1,11 @@
-<?php
+<?php 
 function boldgrid_theme_framework_config( $boldgrid_framework_configs ) {
 	/**
 	 * General Configs
 	 */
 	$boldgrid_framework_configs['theme_name'] = 'boldgrid-pavilion'; // Text domain
 	$boldgrid_framework_configs['scripts']['boldgrid-sticky-footer'] = true;
-	$boldgrid_framework_configs['customizer-options']['typography']['enabled'] = true;
 	$boldgrid_framework_configs['temp']['attribution_links'] = true;
-
-	$boldgrid_framework_configs['boldgrid-parent-theme'] = true;
-	$boldgrid_framework_configs['parent-theme-name'] = 'prime';
-
-	$boldgrid_framework_configs['template']['footer'] = '1';
-	$boldgrid_framework_configs['template']['header'] = '6';
 
 	/**
 	 * Customizer Configs
@@ -28,7 +21,7 @@ function boldgrid_theme_framework_config( $boldgrid_framework_configs ) {
 				'#738599',
 				'#25374a',
 				'#f3f3f3',
-			)
+			) 
 		),
 		array (
 			'format' => 'palette-primary',
@@ -39,7 +32,7 @@ function boldgrid_theme_framework_config( $boldgrid_framework_configs ) {
 				'#8c8c8c',
 				'#1a1a1a',
 				'#f3f3f3',
-			)
+			) 
 		),
 		array (
 			'format' => 'palette-primary',
@@ -50,7 +43,7 @@ function boldgrid_theme_framework_config( $boldgrid_framework_configs ) {
 				'#666666',
 				'#3f313e',
 				'#f3f3f3',
-			)
+			) 
 		),
 		array (
 			'format' => 'palette-primary',
@@ -58,10 +51,10 @@ function boldgrid_theme_framework_config( $boldgrid_framework_configs ) {
 			'colors' => array(
 				'#209a96',
 				'#7d786d',
-				'#4a4740',
+				'#4a4740', 
 				'#7d786d',
 				'#fffaf2',
-			)
+			) 
 		),
 		array (
 			'format' => 'palette-primary',
@@ -72,7 +65,7 @@ function boldgrid_theme_framework_config( $boldgrid_framework_configs ) {
 				'#ffffff',
 				'#558a98',
 				'#585858',
-			)
+			) 
 		),
 	);
 
@@ -113,30 +106,11 @@ function boldgrid_theme_framework_config( $boldgrid_framework_configs ) {
 	$boldgrid_framework_configs['customizer-options']['colors']['light_text'] = '#ffffff';
 	$boldgrid_framework_configs['customizer-options']['colors']['dark_text'] = '#4d4d4d';
 
-	// Typography Headings
-	$boldgrid_framework_configs['customizer-options']['typography']['defaults']['headings_font_family'] = 'Oswald';
-	$boldgrid_framework_configs['customizer-options']['typography']['defaults']['headings_font_size'] = 14;
-	$boldgrid_framework_configs['customizer-options']['typography']['defaults']['headings_text_transform'] = 'none';
-
-	// Typography Alternate Headings
-	$boldgrid_framework_configs['customizer-options']['typography']['defaults']['alternate_headings_font_family'] = 'Roboto';
-	$boldgrid_framework_configs['customizer-options']['typography']['defaults']['alternate_headings_font_size'] = 14;
-	$boldgrid_framework_configs['customizer-options']['typography']['defaults']['alternate_headings_text_transform'] = 'none';
-
-	// Typography Navigation
-	$boldgrid_framework_configs['customizer-options']['typography']['defaults']['navigation_font_family'] = 'Roboto';
-	$boldgrid_framework_configs['customizer-options']['typography']['defaults']['navigation_font_size'] = 14;
-	$boldgrid_framework_configs['customizer-options']['typography']['defaults']['navigation_text_transform'] = 'uppercase';
-
-	// Typography Body
-	$boldgrid_framework_configs['customizer-options']['typography']['defaults']['body_font_family'] = 'Roboto';
-	$boldgrid_framework_configs['customizer-options']['typography']['defaults']['body_font_size'] = 14;
-	$boldgrid_framework_configs['customizer-options']['typography']['defaults']['body_line_height'] = 160;
-
-	// Icons
+	// Fonts & Icons
+	$boldgrid_framework_configs['font']['types'] = array ( 'Roboto:300,400,500,700,900|Oswald:300,400' );
 	$boldgrid_framework_configs['social-icons']['type'] = 'icon-circle';
 	$boldgrid_framework_configs['social-icons']['size'] = 'normal';
-
+	
 	/**
 	 * Widgets
 	 */
@@ -153,7 +127,7 @@ function boldgrid_theme_framework_config( $boldgrid_framework_configs ) {
 HTML;
 
 	$widget_markup['phone-number'] = <<<HTML
-	<div class="phone"><p class="h3 alt-font"><i class="fa fa-phone"></i> Call Today <span class="phone-number">777-765-4321</span></p></div>
+	<div class="phone"><p><i class="fa fa-phone"></i> Call Today <span class="phone-number">777-765-4321</span></p></div>
 HTML;
 
 	// Widget 1
@@ -164,7 +138,7 @@ HTML;
 		'filter' => 1,
 		'label' => 'black-studio-tinymce'
 	);
-
+	
 	// Widget 2
 	$boldgrid_framework_configs['widget']['widget_instances']['boldgrid-widget-2'][] = array(
 		'title' => 'Phone Number',
@@ -188,7 +162,7 @@ add_filter( 'boldgrid_theme_framework_config', 'boldgrid_theme_framework_config'
  */
 function filter_logo_controls( $controls ) {
 	$controls['logo_margin_top']['default'] = 5;
-
+	
 	// Controls above will override framework defaults
 	return $controls;
 }
