@@ -12,7 +12,16 @@ function boldgrid_theme_framework_config( $boldgrid_framework_configs ) {
 	$boldgrid_framework_configs['parent-theme-name'] = 'prime';
 
 	$boldgrid_framework_configs['template']['footer'] = '1';
-	$boldgrid_framework_configs['template']['header'] = '6';
+	$boldgrid_framework_configs['template']['header'] = 'generic';
+
+
+	$boldgrid_framework_configs['template']['locations']['header'] = array(
+		'6' => array( '[action]boldgrid_site_identity' ),
+		'7' => array( '[menu]tertiary' ),
+		'8' => array( '[widget]boldgrid-widget-1', '[menu]secondary', '[action]boldgrid_primary_navigation' ),
+		'9' => array( '[menu]social' ),
+		'10' => array( '[widget]boldgrid-widget-2' ),
+	);
 
 	/**
 	 * Customizer Configs
@@ -135,7 +144,7 @@ function boldgrid_theme_framework_config( $boldgrid_framework_configs ) {
 
 	// Icons
 	$boldgrid_framework_configs['social-icons']['type'] = 'icon-circle';
-	$boldgrid_framework_configs['social-icons']['size'] = 'normal';
+	$boldgrid_framework_configs['social-icons']['size'] = 'large';
 
 	/**
 	 * Widgets

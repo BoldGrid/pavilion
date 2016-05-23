@@ -16,6 +16,25 @@ Tags: custom-background, custom-colors, custom-menu, editor-style, responsive-la
 	display: none;
 }
 
+.section-6 > .container {
+	background-color: white;
+}
+
+.section-1,
+.section-2,
+.section-3,
+.section-7 {
+	display: none;
+}
+
+#primary-navbar.navbar-collapse {
+	padding: 0;
+}
+
+.navbar-default .navbar-nav {
+    margin-left: auto !important;
+}
+
 /*------------------------------------------------------------------------
 >>> TABLE OF CONTENTS:
 --------------------------------------------------------------------------
