@@ -25,7 +25,6 @@
 	<header id="masthead" class="site-header" role="banner" <?php BoldGrid_Framework_Schema::header( true ); ?>> 
 		<?php BoldGrid::skip_link(  ); ?>
 		<?php do_action( 'boldgrid_header_top' ); ?>
-		
 		<div class="container">	
 			<div class="row">
 				<div class="col-md-8">
@@ -33,34 +32,36 @@
 					<?php do_action('boldgrid_print_tagline');?>
 				</div>
 				<div class="col-md-4">
-					<div class="pull-right pull-right-margin"><?php do_action( 'boldgrid_menu_tertiary' ); ?></div>
+					<div class="pull-right pull-right-margin">
+						<?php do_action( 'boldgrid_menu_tertiary' ); ?>
+					</div>
 				</div>
 			</div>
-
 			<div class="row">
 				<div class="col-md-12">
 					<?php dynamic_sidebar( 'boldgrid-widget-1' ); ?>
 				</div>
 			</div>
-
 			<div class="row">
-				<div class="pull-right"><?php do_action('boldgrid_menu_secondary') ?></div> 
+				<div class="pull-right">
+					<?php do_action('boldgrid_menu_secondary') ?>
+				</div> 
 			</div>
-
 			<div class="row">
-				<nav id="site-navigation" class="navbar navbar-default" role="navigation">
-					<div class="navbar-header">
-						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#primary-navbar">
-							<span class="sr-only">Toggle navigation</span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-						</button>
-					</div><!-- .navbar-header -->
-					<?php do_action('boldgrid_menu_primary'); ?>
-				</nav><!-- #site-navigation -->
-			</div><!-- .row -->
-			
+				<?php if ( has_nav_menu( 'primary' ) ) : ?>
+					<nav id="site-navigation" class="navbar navbar-default" role="navigation">
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#primary-navbar">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+						</div>
+						<?php do_action('boldgrid_menu_primary'); ?>
+					</nav>
+				<?php endif; ?>
+			</div>
 			<div class="row social">
 				<div class="col-md-6">
 					<?php do_action('boldgrid_menu_social') ?>
@@ -68,11 +69,10 @@
 				<div class="col-md-6">
 					<?php dynamic_sidebar( 'boldgrid-widget-2' ); ?>
 				</div>
-			<?php do_action( 'boldgrid_header_bottom' ); ?>
+				<?php do_action( 'boldgrid_header_bottom' ); ?>
 			</div>
-		</div>
-	</header>
-
+		</div><!-- .container -->
+	</header><!-- .site-header -->
 	<?php do_action( 'boldgrid_header_after' ); ?>
 	<div id="content" class="site-content">
 		<div class="container-fluid">

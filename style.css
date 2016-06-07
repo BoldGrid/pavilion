@@ -1,10 +1,10 @@
 /*
 Theme Name: Pavilion
 Author: The BoldGrid Team
-Theme URI: http://www.boldgrid.com/pavilion
-Author URI: http://www.boldgrid.com/the-team
+Theme URI: https://www.boldgrid.com/pavilion
+Author URI: https://www.boldgrid.com/the-team
 Description: Designed specifically for use with the BoldGrid suite of plugins, all BoldGrid themes are highly customizable, responsive to a wide range of devices, and of course, beautiful. Every BoldGrid theme includes five pre-selected color palettes and an advanced tool for creating your own unique palette. In addition, all themes feature multiple menu locations and widget areas, which are easily customizable to suit your needs. So if you're looking for a theme that looks great, feels modern and professional, and offers plenty of features to make it your own, you've chosen well.
-Version: 1.16
+Version: 1.19
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: boldgrid-pavilion
@@ -29,7 +29,6 @@ Tags: custom-background, custom-colors, custom-menu, editor-style, responsive-la
 	## Social Menus
 # GridBLocks
 	## Positioning
-	## Alternates
 # Modules
 	## Universal
 	## Global
@@ -50,18 +49,10 @@ Tags: custom-background, custom-colors, custom-menu, editor-style, responsive-la
 /*-----------------------------------------------
 ## Background
 -----------------------------------------------*/
-body,
-.custom-background {
-  	-webkit-background-size: cover;
-  	-moz-background-size: cover;
-  	-o-background-size: cover;
-  	background-size: cover;
-}
-
 /* sm */
 @media (min-width: 790px) {
 	.background-shadow {
-		min-height:225px;
+		min-height: 225px;
 		position: relative;
 	}
 	.background-shadow:after, 
@@ -70,21 +61,22 @@ body,
 	    border-style: solid;
 	    content: "";
 	    height: 225px;
-	    top: 0px;
-	    position: absolute;
+	   	position: absolute;
+	    top: 0;
 	}
 	.background-shadow:after {
 		right: -4px;
 	}
 	.background-shadow:before {
-		left:-4px;
+		left: -4px;
 	}
 }
 
-@media (max-width: 992px) {
+/* md */
+@media (min-width: 992px) {
 	.background-shadow:after, 
 	.background-shadow:before {
-	    top: -22px;
+	    top: 0;
 	}
 }
 
@@ -95,135 +87,80 @@ body,
 	margin-bottom: 60px;
 	margin-top: -45px;
 }
+.page-content, 
+.entry-content, 
+.entry-summary {
+    margin: 0;
+}
+
+/* xs */
+.page-template-page_home .entry-content {
+	margin-top: 40px;
+}
+
+/* md */
+@media (min-width: 992px) {
+	.page-template-page_home .entry-content {
+		margin-top: 10px;
+	}
+}
 
 /*-----------------------------------------------
 ## Typography
 -----------------------------------------------*/
-body {
-	font-weight: 400;
+.site-description,
+.entry-title,
+.phone p,
+.mod-alpha h5,
+.mod-alpha-1 p,
+.mod-gamma-2 li:first-child {
+	font-weight: bold;
 }
-
-/* Navigation */
-#site-navigation {
-	font-weight: 400;
-}
-.secondary-menu a[href]:hover,
-.tertiary-menu a[href]:hover {
-    text-decoration: underline;
+.p-button-primary,
+.p-button-secondary {
+	white-space: nowrap;
 }
 .menu-social li a {
-    text-align: center;
     -webkit-font-smoothing: antialiased;
 }
-.gridblock .heading-alt {
-	font-weight: 400;
-}
-/* Etc */
-.site-description {
-	font-weight: 500;
-	line-height: 1.5;
-}
-.entry-title {
-	font-family: "Oswald";
-	font-weight: 600;
-	text-align: center;
-}
-.menu-social li.menu-social a {
-    font-size: 10px;
-}
-.mod-beta h2 {
-	font-weight: 400;
-}
-.button-primary,
-.button-secondary,
-input[type="submit"] {
-	font-weight: 400;
+.secondary-menu a[href]:hover,
+.secondary-menu a[href]:focus,
+.tertiary-menu a[href]:hover,
+.tertiary-menu a[href]:focus,
+.site-footer a {
+	text-decoration: underline;
 }
 .button-primary:hover,
 .button-primary:focus,
 .button-secondary:hover,
 .button-secondary:focus,
 input[type="submit"]:hover,
-input[type="submit"]:focus {
-	text-decoration: none;
-}
-.call-to-action .button-primary {
-	font-weight: 400;
-}
-.p-button-primary,
-.p-button-secondary {
-	white-space: nowrap;
-}
-.site-title {
-	font-weight: normal;
-}
-#slogan {
-	font-weight: 300;
-	text-align: center;
-}
-.phone p {
-	font-family: "Roboto";
-	font-weight: 500;
-}
-.mod-divider a {
-	font-family: "Oswald";
-	font-weight: 400;
-	text-decoration: none;
-}
-.mod-blockquote p {
-	font-weight: 400;
-	line-height: 30px;
-}
-.mod-alpha h5 {
-	font-weight: 900;
-}
-.mod-alpha p {
-	font-weight: 400;
-	line-height: 1;
-}
-.mod-alpha-1 p {
-	font-weight: 900;
-}
-.mod-alpha .p-button-secondary {
-	white-space: nowrap;
-}
-.mod-icon-box {
-	font-size: 65px;
-	line-height: 130px;
-  	text-align: center;
-}
-.mod-gamma-2 li {
-	font-weight: 400;
-}
-.mod-gamma-2 li:first-child {
-	font-weight: 700;
-}
-.form-submit .submit {
-	font-weight: 300;
-    text-transform: uppercase;
-}
-.woocommerce p.buttons a.button:hover {
-    text-decoration: none;
-}
-.site-footer p,
-.site-info,
-.attribution {
-	font-weight: 300;
-	text-align: center;
-}
-.site-footer a {
-	text-decoration: underline;
-}
+input[type="submit"]:focus,
+.mod-divider a,
+.woocommerce p.buttons a.button:hover,
+.woocommerce p.buttons a.button:focus,
 .site-footer a:hover,
 .site-footer a:focus {
 	text-decoration: none;
 }
-/* Always center */
+#slogan,
+.entry-title,
+.menu-social li a,
+.mod-icon-box,
 .phone,
 .mod-divider,
 .mod-beta,
-.mod-beta p {
-	text-align: none;
+.mod-beta p,
+.mod-beta .p-button-primary,
+.site-footer p,
+.site-info,
+.attribution {
+	text-align: center;
+}
+
+/* Icons */
+.mod-icon-box {
+	font-size: 65px;
 }
 
 /* xs */
@@ -236,9 +173,7 @@ input[type="submit"]:focus {
 .heading h3,
 .mod-alpha h5,
 .mod-alpha p,
-.mod-alpha-1 p {
-	text-align: center;
-}
+.mod-alpha-1 p,
 .navbar-default .navbar-nav,
 .navbar-default .navbar-nav .open .dropdown-menu {
 	text-align: center;
@@ -324,6 +259,10 @@ h2 i.fa {
 /*-----------------------------------------------
 ## Links
 -----------------------------------------------*/
+/* Removes blue box in Chrome */
+*:focus {
+	outline: 0;
+}
 
 /*-----------------------------------------------
 ## Buttons
@@ -391,10 +330,8 @@ hr {
 /*------------------------------------------------------------------------
 # Header
 ------------------------------------------------------------------------*/
-.site-title {
-	margin-left: -15px;
-}
 .site-title a {
+	margin-left: -15px;
 	padding: 5px 15px 10px;
 }
 .site-description {
@@ -406,7 +343,7 @@ hr {
 
 /* Call to Action */
 #slogan {
-	margin: 2em -15px 2px;
+	margin: 2em -15px 0;
 	padding: 30px 15px;
 }
 .call-to-action {
@@ -419,17 +356,10 @@ hr {
 	min-height: 100px;
 }
 
-/* Social Media */
-.page-content, 
-.entry-content, 
-.entry-summary {
-    margin: 0;
+/* Social */
+.social {
+	min-height: 100px;
 }
-.social .fa-stack {
-	font-size: 1.5em;
-}
-
-/* Social Phone */
 .phone i {
 	margin-right: 5px;
 }
@@ -456,9 +386,6 @@ hr {
 .phone {
 	margin: 15px 0 30px;
 }
-.social {
-	height: 150px;
-}
 
 /* md */
 @media (min-width: 992px) {
@@ -470,7 +397,6 @@ hr {
 		margin: 15px 0 5px;
 	}
 	.social {
-		height: 100px;
 		text-align: left;
 	}
 }
@@ -482,7 +408,6 @@ hr {
 /*-----------------------------------------------
 ## Main Menu
 -----------------------------------------------*/
-/* Nav Reset */
 .navbar {
 	border: none;
 	/* Border Radius */
@@ -516,6 +441,9 @@ hr {
 /*-----------------------------------------------
 ## Other Menus
 -----------------------------------------------*/
+.boldgrid-framework-menu li { 
+	display: inline-block; 
+}
 .secondary-menu a,
 .tertiary-menu a {
 	padding: 0 5px;
@@ -569,10 +497,6 @@ li.menu-social:after {
 	margin: 10px 0;
 }
 
-/*-----------------------------------------------
-## Alternates
------------------------------------------------*/
-
 /*------------------------------------------------------------------------
 # Modules
 ------------------------------------------------------------------------*/
@@ -622,10 +546,9 @@ li.menu-social:after {
 /*-----------------------------------------------
 ## Global
 -----------------------------------------------*/
-/* Dividers */
 .mod-divider {
 	margin: 4em 0;
-	padding-top: 13px;
+	padding-top: 0.9em;
 }
 .mod-divider a {
 	padding: 10px 20px;
@@ -637,8 +560,7 @@ li.menu-social:after {
 	border-bottom-right-radius: 7px;
 	border-bottom-left-radius: 7px;
 }
-
-/* Blockquotes */
+blockquote,
 .mod-blockquote {
     padding-left: 20px;
 }
@@ -652,6 +574,9 @@ li.menu-social:after {
 }
 .mod-alpha img {
 	padding: 0;	
+}
+.mod-alpha h2 {
+	margin-left: 20px;
 }
 .mod-alpha h5 {
 	margin-bottom: 10px;
