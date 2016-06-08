@@ -85,28 +85,21 @@ function boldgrid_theme_framework_config( $boldgrid_framework_configs ) {
 		),
 	);
 
-	// Get Subcategory ID from the Database
-	$boldgrid_install_options = get_option( 'boldgrid_install_options', array() );
-	$subcategory_id = null;
-	if ( !empty( $boldgrid_install_options['subcategory_id'] ) ) {
-		$subcategory_id = $boldgrid_install_options['subcategory_id'];
-	}
-
 	// Override Options per Subcategory
-	switch ( $subcategory_id ) {
-		case 15: //<-- Fitness
+	switch ( $boldgrid_framework_configs['inspiration']['subcategory_key'] ) {
+		case 'Fitness':
 			$boldgrid_framework_configs['customizer-options']['colors']['defaults'][1]['default'] = true;
 			$cta_h2 = 'WORK HARDER THAN YESTERDAY TO ACHIEVE A DIFFERENT TOMORROW.';
 			break;
-		case 17: //<-- Home Repair
+		case 'Home Repair':
 			$boldgrid_framework_configs['customizer-options']['colors']['defaults'][3]['default'] = true;
 			$cta_h2 = 'WE MAKE IT OUR BUSINESS TO FIND THE PERFECT FIT FOR YOUR NEEDS.';
 			break;
-		case 18: //<-- Property Management
+		case 'Property Management':
 			$boldgrid_framework_configs['customizer-options']['colors']['defaults'][4]['default'] = true;
 			$cta_h2 = 'WE MAKE IT OUR BUSINESS TO FIND THE PERFECT FIT FOR YOUR NEEDS.';
 			break;
-		case 22: //<-- Marketing
+		case 'Marketing':
 			$boldgrid_framework_configs['customizer-options']['colors']['defaults'][1]['default'] = true;
 			$cta_h2 = 'WE MAKE IT OUR BUSINESS TO FIND THE PERFECT FIT FOR YOUR NEEDS.';
 			break;
