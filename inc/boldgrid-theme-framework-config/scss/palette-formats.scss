@@ -156,7 +156,7 @@
 	.gridblock .heading-alt,
 	li.menu-social a[href]:hover,
 	#primary-navbar li.menu-social a[href]:hover {
-		color: $palette-primary_3;	
+		color: $palette-primary_3;
 	}
 	.menu-social .fa-inverse:hover,
 	.menu-social .fa-inverse:focus {
@@ -295,7 +295,6 @@
 	#footer-widget-area td {
 	    color: #333;
 	}
-	body,
 	.site-description,
 	.navbar-default .navbar-nav .dropdown .dropdown-menu > li > a {
 		color: #4d4d4d;
@@ -353,4 +352,8 @@
 		    -o-border-image: -o-linear-gradient(#b3b3b3, rgba(0, 0, 0, 0)) 1 100%;
 		}
 	}
+}
+
+body.palette-primary.page-template-default h2 {
+	color: $palette-primary_3;
 }

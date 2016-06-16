@@ -4,8 +4,8 @@ function boldgrid_theme_framework_config( $boldgrid_framework_configs ) {
 	 * General Configs
 	 */
 	$boldgrid_framework_configs['theme_name'] = 'boldgrid-pavilion'; // Text domain
-	$boldgrid_framework_configs['scripts']['boldgrid-sticky-footer'] = true;
 	$boldgrid_framework_configs['customizer-options']['typography']['enabled'] = true;
+	$boldgrid_framework_configs['scripts']['boldgrid-sticky-footer'] = true;
 	$boldgrid_framework_configs['temp']['attribution_links'] = true;
 
 	/**
@@ -128,8 +128,13 @@ function boldgrid_theme_framework_config( $boldgrid_framework_configs ) {
 	$boldgrid_framework_configs['customizer-options']['typography']['defaults']['body_line_height'] = 160;
 
 	// Typography Relationships
-	$boldgrid_framework_configs['customizer-options']['typography']['selectors']['.mod-alpha h2' ]= array(
+	$boldgrid_framework_configs['customizer-options']['typography']['selectors']['.call-to-action-wrapper h2' ]= array(
 		'type' => 'headings',
+		'round' => 'floor',
+		'amount' => 2.3,
+	);
+	$boldgrid_framework_configs['customizer-options']['typography']['selectors']['.mod-alpha h2' ]= array(
+		'type' => 'subheadings',
 		'round' => 'floor',
 		'amount' => 1.2,
 	);
@@ -139,7 +144,7 @@ function boldgrid_theme_framework_config( $boldgrid_framework_configs ) {
 		'amount' => 1.6,
 	);
 	$boldgrid_framework_configs['customizer-options']['typography']['selectors']['.phone p' ]= array(
-		'type' => 'headings',
+		'type' => 'subheadings',
 		'round' => 'floor',
 		'amount' => 1.6,
 	);
@@ -169,7 +174,7 @@ function boldgrid_theme_framework_config( $boldgrid_framework_configs ) {
 HTML;
 
 	$widget_markup['phone-number'] = <<<HTML
-	<div class="phone"><p class="h3 alt-font"><i class="fa fa-phone"></i> Call Today <span class="phone-number">777-765-4321</span></p></div>
+	<div class="phone"><p><i class="fa fa-phone"></i> Call Today <span class="phone-number">777-765-4321</span></p></div>
 HTML;
 
 	// Widget 1
