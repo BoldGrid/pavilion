@@ -1,4 +1,4 @@
-<?php 
+<?php
 function boldgrid_theme_framework_config( $boldgrid_framework_configs ) {
 	/**
 	 * General Configs
@@ -22,7 +22,7 @@ function boldgrid_theme_framework_config( $boldgrid_framework_configs ) {
 				'#738599',
 				'#25374a',
 				'#f3f3f3',
-			) 
+			)
 		),
 		array (
 			'format' => 'palette-primary',
@@ -33,7 +33,7 @@ function boldgrid_theme_framework_config( $boldgrid_framework_configs ) {
 				'#8c8c8c',
 				'#1a1a1a',
 				'#f3f3f3',
-			) 
+			)
 		),
 		array (
 			'format' => 'palette-primary',
@@ -44,7 +44,7 @@ function boldgrid_theme_framework_config( $boldgrid_framework_configs ) {
 				'#666666',
 				'#3f313e',
 				'#f3f3f3',
-			) 
+			)
 		),
 		array (
 			'format' => 'palette-primary',
@@ -52,10 +52,10 @@ function boldgrid_theme_framework_config( $boldgrid_framework_configs ) {
 			'colors' => array(
 				'#209a96',
 				'#7d786d',
-				'#4a4740', 
+				'#4a4740',
 				'#7d786d',
 				'#fffaf2',
-			) 
+			)
 		),
 		array (
 			'format' => 'palette-primary',
@@ -66,7 +66,7 @@ function boldgrid_theme_framework_config( $boldgrid_framework_configs ) {
 				'#ffffff',
 				'#558a98',
 				'#585858',
-			) 
+			)
 		),
 	);
 
@@ -131,28 +131,28 @@ function boldgrid_theme_framework_config( $boldgrid_framework_configs ) {
 	$boldgrid_framework_configs['customizer-options']['typography']['selectors']['.mod-alpha h2' ]= array(
 		'type' => 'headings',
 		'round' => 'floor',
-		'amount' => 1.2, 
+		'amount' => 1.2,
 	);
 	$boldgrid_framework_configs['customizer-options']['typography']['selectors']['.mod-beta h2' ]= array(
 		'type' => 'headings',
 		'round' => 'floor',
-		'amount' => 1.6, 
-	);	
+		'amount' => 1.6,
+	);
 	$boldgrid_framework_configs['customizer-options']['typography']['selectors']['.phone p' ]= array(
-		'type' => 'body',
+		'type' => 'headings',
 		'round' => 'floor',
-		'amount' => 1.6, 
+		'amount' => 1.6,
 	);
 	$boldgrid_framework_configs['customizer-options']['typography']['selectors']['.mod-divider a' ]= array(
-		'type' => 'body',
+		'type' => 'headings',
 		'round' => 'floor',
-		'amount' => 1.3, 
-	);	
+		'amount' => 1.3,
+	);
 
 	// Icons
 	$boldgrid_framework_configs['social-icons']['type'] = 'icon-circle';
 	$boldgrid_framework_configs['social-icons']['size'] = 'normal';
-	
+
 	/**
 	 * Widgets
 	 */
@@ -180,7 +180,7 @@ HTML;
 		'filter' => 1,
 		'label' => 'black-studio-tinymce'
 	);
-	
+
 	// Widget 2
 	$boldgrid_framework_configs['widget']['widget_instances']['boldgrid-widget-2'][] = array(
 		'title' => 'Phone Number',
@@ -204,7 +204,7 @@ add_filter( 'boldgrid_theme_framework_config', 'boldgrid_theme_framework_config'
  */
 function filter_logo_controls( $controls ) {
 	$controls['logo_margin_top']['default'] = 5;
-	
+
 	// Controls above will override framework defaults
 	return $controls;
 }
