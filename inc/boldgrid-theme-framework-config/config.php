@@ -155,6 +155,33 @@ function boldgrid_theme_framework_config( $boldgrid_framework_configs ) {
 	$boldgrid_framework_configs['customizer-options']['typography']['defaults']['body_font_size'] = 14;
 	$boldgrid_framework_configs['customizer-options']['typography']['defaults']['body_line_height'] = 160;
 
+	// Typography Relationships
+	$boldgrid_framework_configs['customizer-options']['typography']['selectors']['.call-to-action-wrapper h2' ]= array(
+			'type' => 'headings',
+			'round' => 'floor',
+			'amount' => 2.3,
+	);
+	$boldgrid_framework_configs['customizer-options']['typography']['selectors']['.mod-alpha h2' ]= array(
+			'type' => 'subheadings',
+			'round' => 'floor',
+			'amount' => 1.2,
+	);
+	$boldgrid_framework_configs['customizer-options']['typography']['selectors']['.mod-beta h2' ]= array(
+			'type' => 'headings',
+			'round' => 'floor',
+			'amount' => 1.6,
+	);
+	$boldgrid_framework_configs['customizer-options']['typography']['selectors']['.phone p' ]= array(
+			'type' => 'subheadings',
+			'round' => 'floor',
+			'amount' => 1.6,
+	);
+	$boldgrid_framework_configs['customizer-options']['typography']['selectors']['.mod-divider a' ]= array(
+			'type' => 'headings',
+			'round' => 'floor',
+			'amount' => 1.3,
+	);
+
 	// Icons
 	$boldgrid_framework_configs['social-icons']['type'] = 'icon-circle';
 	$boldgrid_framework_configs['social-icons']['size'] = 'large';

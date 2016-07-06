@@ -2,7 +2,6 @@
 # Palettes
 ------------------------------------------------------------------------*/
 .palette-primary {
-	
 	background: $palette-primary-neutral-color;
 	color: $text-contrast-palette-primary-neutral-color;
 
@@ -147,15 +146,17 @@
 	.widget-title,
 	#reply-title,
 	.entry-title,
-	.mod-beta h3,
+	.mod-alpha h2,
+	.mod-beta h2,
 	.link-secondary,
+	blockquote p,
 	.mod-blockquote p,
 	.comments-title,
 	.comment-reply-title,
 	.gridblock .heading-alt,
 	li.menu-social a[href]:hover,
 	#primary-navbar li.menu-social a[href]:hover {
-		color: $palette-primary_3;	
+		color: $palette-primary_3;
 	}
 	.menu-social .fa-inverse:hover,
 	.menu-social .fa-inverse:focus {
@@ -203,6 +204,7 @@
 	.mod-alpha p {
 		color: $text-contrast-palette-primary_5;
 	}
+	blockquote,
 	.mod-blockquote {
 	    border-left: 5px solid $palette-primary_5;
 	}
@@ -211,7 +213,6 @@
 	## Neutral
 	-----------------------------------------------*/
 	.social,
-	.site-content,
 	.background-primary,
 	#boldgrid-sticky-push,
 	#boldgrid-sticky-filler,
@@ -284,7 +285,7 @@
 	}
 
 	/*-----------------------------------------------
-	##Et Cetera
+	## Et Cetera
 	-----------------------------------------------*/
 	.well .widget-title {
 	    color: #8c8c8c;
@@ -294,34 +295,15 @@
 	#footer-widget-area td {
 	    color: #333;
 	}
-	body,
 	.site-description,
 	.navbar-default .navbar-nav .dropdown .dropdown-menu > li > a {
 		color: #4d4d4d;
-	}
-	.site-description
-	.call-to-action .button-primary {
-		background: rgba(239,121,40,0.9);
-		color: #fff;
-	}
-	#slogan,
-	.site-title a {
-		background: rgba(37,55,74,0.9);
-		color: #fff;
 	}
 	.phone p {
 		color: #76889c;
 	}
 	.navbar-default .navbar-toggle {
 	    border-color: #ddd;
-	}
-	.secondary-menu,
-	.tertiary-menu {
-	    background-color: rgba(37, 55, 74, 0.9);
-	}
-
-	.mod-blockquote {
-		border-left: 5px solid #f2f2f2;
 	}
 	.mod-alpha img {
 		border: 3px solid #fff;
@@ -332,7 +314,7 @@
 	}
 	.mod-icon-box {
 	  	background-color: #d1d3d4;
-	  	border: 10px solid white;
+	  	border: 10px double white;
 	}
 	.mod-gamma-1 img {
 		/* Box Shadow */
@@ -366,4 +348,8 @@
 		    -o-border-image: -o-linear-gradient(#b3b3b3, rgba(0, 0, 0, 0)) 1 100%;
 		}
 	}
+}
+
+body.palette-primary.page-template-default h2 {
+	color: $palette-primary_3;
 }
