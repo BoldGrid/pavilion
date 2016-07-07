@@ -27,6 +27,10 @@ function boldgrid_theme_framework_config( $boldgrid_framework_configs ) {
 	// Select the footer template to use.
 	$boldgrid_framework_configs['template']['footer'] = 'generic';
 
+	// Set the container classes per template
+	$boldgrid_framework_configs['template']['pages']['default']['container_class'] = 'container';
+	$boldgrid_framework_configs['template']['pages']['page_home.php']['container_class'] = 'container';
+
 	// Assign Locations for Generic Header.
 	$boldgrid_framework_configs['template']['locations']['header'] = array(
 		'6' => array( '[action]boldgrid_site_identity' ),
@@ -184,7 +188,7 @@ function boldgrid_theme_framework_config( $boldgrid_framework_configs ) {
 
 	// Icons
 	$boldgrid_framework_configs['social-icons']['type'] = 'icon-circle';
-	$boldgrid_framework_configs['social-icons']['size'] = 'large';
+	$boldgrid_framework_configs['social-icons']['size'] = 'normal';
 
 	/**
 	 * Widgets

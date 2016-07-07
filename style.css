@@ -50,14 +50,20 @@ Tags: custom-background, custom-colors, custom-menu, editor-style, responsive-la
 /*-----------------------------------------------
 ## Background
 -----------------------------------------------*/
+.site-content .main {
+	position: relative;
+    top: -45px;
+    padding: 0 15px;
+}
+
 /* sm */
 @media (min-width: 790px) {
-	.background-shadow {
+	.site-content .main {
 		min-height: 225px;
 		position: relative;
 	}
-	.background-shadow:after, 
-	.background-shadow:before {
+	.site-content .main:after, 
+	.site-content .main:before {
 	    border-width: 2px;
 	    border-style: solid;
 	    content: "";
@@ -65,19 +71,19 @@ Tags: custom-background, custom-colors, custom-menu, editor-style, responsive-la
 	   	position: absolute;
 	    top: 0;
 	}
-	.background-shadow:after {
+	.site-content .main:after {
 		right: -4px;
 	}
-	.background-shadow:before {
+	.site-content .main:before {
 		left: -4px;
 	}
 }
 
 /* md */
 @media (min-width: 992px) {
-	.background-shadow:after, 
-	.background-shadow:before {
-	    top: 0;
+	.site-content .main:after, 
+	.site-content .main:before {
+	    top: 45px;
 	}
 }
 
@@ -94,16 +100,8 @@ Tags: custom-background, custom-colors, custom-menu, editor-style, responsive-la
     margin: 0;
 }
 
-/* xs */
 .page-template-page_home .entry-content {
-	margin-top: 40px;
-}
-
-/* md */
-@media (min-width: 992px) {
-	.page-template-page_home .entry-content {
-		margin-top: 10px;
-	}
+	margin-top: 10px;
 }
 
 /*-----------------------------------------------
@@ -171,7 +169,7 @@ input[type="submit"]:focus,
 .mod-img-circle,
 .p-button-primary,
 .p-button-secondary,
-.social,
+.row > .header-9,
 .heading h3,
 .mod-alpha h5,
 .mod-alpha p,
@@ -196,7 +194,7 @@ input[type="submit"]:focus,
 	.mod-img-circle,
 	.p-button-primary,
 	.p-button-secondary,
-	.social,
+	.row > .header-9,
 	.heading h3,
 	.mod-alpha h5,
 	.mod-alpha p,
@@ -221,6 +219,10 @@ input[type="submit"]:focus,
 .entry-title,
 .mod-beta h3 {
 	margin: 1em 0;
+}
+
+.entry-title > * {
+	padding: 0 15px;
 }
 
 /* Headings */
@@ -359,9 +361,6 @@ hr {
 }
 
 /* Social */
-.social {
-	min-height: 100px;
-}
 .phone i {
 	margin-right: 5px;
 }
@@ -371,6 +370,7 @@ hr {
 .entry-header {
 	position: relative;
 	z-indez: 99;
+	padding: 0px 15px;
 }
 .phone .h3.alt-font {
     margin-top: 0;
@@ -398,7 +398,7 @@ hr {
 		float: right;
 		margin: 15px 0 5px;
 	}
-	.social {
+	.row > .header-9 {
 		text-align: left;
 	}
 }
@@ -440,6 +440,15 @@ hr {
 	margin-left: 0;
 }
 
+#site-navigation {
+	margin: 0px -15px;
+}
+
+#site-navigation .navbar-header,
+#site-navigation .navbar-collapse {
+	margin-right: 0px;
+}
+
 /*-----------------------------------------------
 ## Other Menus
 -----------------------------------------------*/
@@ -452,6 +461,35 @@ hr {
 }
 .pull-right-margin {
 	margin-right: -15px;
+}
+
+#secondary-menu,
+#tertiary-menu {
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+    text-align: right;
+}
+
+#secondary-menu-items,
+#tertiary-menu-items {
+	display: inline-block;
+	padding: 10px;
+	margin: 0 -15px 0 0;
+}
+
+#footer-center-menu {
+	text-align: center;
+}
+
+.row.header-9.header-10 {
+    min-height: 90px;
+}
+
+@media ( max-width: 991px ) {
+	.row.header-9.header-10 {
+		min-height: 130px;
+	}
 }
 
 /*-----------------------------------------------
@@ -618,12 +656,14 @@ blockquote,
 /* xs */
 .mod-alpha {
 	margin-bottom: 1em;
+	text-align: center;
 }
 
 /* md */
 @media (min-width: 992px) {
 	.mod-alpha {
 		margin-bottom: 0;
+		text-align: left;
 	}
 	.mod-alpha .p-button-secondary {
 		margin: 15px 0;
@@ -773,8 +813,9 @@ blockquote,
 	clear: both;
 	padding: 20px 0;
 }
-.attribution {
-	margin-top: 0;
+.attribution-theme-mods {
+    display: table;
+    margin: 0 auto;
 }
 
 /** Sticky Footer **/
