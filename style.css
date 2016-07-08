@@ -31,7 +31,6 @@ Tags: custom-background, custom-colors, custom-menu, editor-style, responsive-la
 # GridBLocks
 	## Positioning
 # Modules
-	## Universal
 	## Global
 	## Alpha
 	## Beta
@@ -62,7 +61,7 @@ Tags: custom-background, custom-colors, custom-menu, editor-style, responsive-la
 		min-height: 225px;
 		position: relative;
 	}
-	.site-content .main:after, 
+	.site-content .main:after,
 	.site-content .main:before {
 	    border-width: 2px;
 	    border-style: solid;
@@ -81,7 +80,7 @@ Tags: custom-background, custom-colors, custom-menu, editor-style, responsive-la
 
 /* md */
 @media (min-width: 992px) {
-	.site-content .main:after, 
+	.site-content .main:after,
 	.site-content .main:before {
 	    top: 45px;
 	}
@@ -94,8 +93,8 @@ Tags: custom-background, custom-colors, custom-menu, editor-style, responsive-la
 	margin-bottom: 60px;
 	margin-top: -45px;
 }
-.page-content, 
-.entry-content, 
+.page-content,
+.entry-content,
 .entry-summary {
     margin: 0;
 }
@@ -214,7 +213,7 @@ input[type="submit"]:focus,
 	margin-top: 0;
 }
 .page-header {
-	padding-top: 20px;	
+	padding-top: 20px;
 }
 .entry-title,
 .mod-beta h3 {
@@ -227,10 +226,10 @@ input[type="submit"]:focus,
 
 /* Headings */
 h2 i.fa {
-	padding-right: 10px;	
+	padding-right: 10px;
 }
 .hentry {
-	margin: 0 auto;	
+	margin: 0 auto;
 }
 .heading {
     margin-bottom: 15px;
@@ -251,12 +250,12 @@ h2 i.fa {
     content:"";
 	left: 0;
     margin: 0 auto;
-    position: absolute; 
+    position: absolute;
     right: 0;
     width: 100%;
     z-index: -1;
 }
-.entry-title span { 
+.entry-title span {
     padding: 0 15px;
 }
 
@@ -415,10 +414,10 @@ hr {
 	/* Border Radius */
 	-webkit-border-radius: 0;
 	-moz-border-radius: 0;
-    border-radius: 0;   
+    border-radius: 0;
 }
 .navbar-nav > li > .dropdown-menu {
-    border-radius: 0;   
+    border-radius: 0;
     padding: 0px;
 }
 .navbar-nav > li > .dropdown-menu a {
@@ -452,8 +451,8 @@ hr {
 /*-----------------------------------------------
 ## Other Menus
 -----------------------------------------------*/
-.boldgrid-framework-menu li { 
-	display: inline-block; 
+.boldgrid-framework-menu li {
+	display: inline-block;
 }
 .secondary-menu a,
 .tertiary-menu a {
@@ -500,7 +499,7 @@ hr {
 }
 .menu-social ul li {
     position: relative;
-    display:  inline-block;    
+    display:  inline-block;
 }
 .menu-social li a {
     border-radius: 50%;
@@ -514,7 +513,7 @@ li.menu-social a[href]:hover {
     background: none;
 }
 li.menu-social:after {
-    content: "";    
+    content: "";
 }
 
 /*------------------------------------------------------------------------
@@ -524,14 +523,14 @@ li.menu-social:after {
 /*-----------------------------------------------
 ## Positioning
 -----------------------------------------------*/
-.gridblock h1, 
-.gridblock h2, 
-.gridblock h3, 
-.gridblock h4, 
-.gridblock h5, 
+.gridblock h1,
+.gridblock h2,
+.gridblock h3,
+.gridblock h4,
+.gridblock h5,
 .gridblock h6,
-.gridblock ol, 
-.gridblock ul, 
+.gridblock ol,
+.gridblock ul,
 .gridblock li,
 .gridblock p {
 	margin: 10px 0;
@@ -540,48 +539,6 @@ li.menu-social:after {
 /*------------------------------------------------------------------------
 # Modules
 ------------------------------------------------------------------------*/
-
-/*-----------------------------------------------
-## Universal
------------------------------------------------*/
-.mod-reset {
-	margin: 0 !important;
-	padding: 0 !important;
-}
-.mod-space,
-.mod-space-2x,
-.mod-space-3x,
-.mod-space-4x,
-.mod-space-5x {
-	background: none;
-}
-.mod-space {
-	height: 15px;
-}
-.mod-space-2x {
-	height: 30px;
-}
-.mod-space-3x {
-	height: 45px;
-}
-.mod-space-4x {
-	height: 60px;
-}
-.mod-space-5x {
-	height: 75px;
-}
-
-/* Images */
-.mod-img,
-.mod-img-circle,
-.image-gallery img,
-.video-gallery img,
-.slideshow-gallery img {
-	margin-bottom: 15px;	
-}
-.mod-img-circle img {
-	border-radius: 50%;
-}
 
 /*-----------------------------------------------
 ## Global
@@ -613,7 +570,7 @@ blockquote,
 	padding-bottom: 10px;
 }
 .mod-alpha img {
-	padding: 0;	
+	padding: 0;
 }
 .mod-alpha h2 {
 	margin-left: 20px;
@@ -772,7 +729,7 @@ blockquote,
 	margin-top: 25px;
 }
 .single .call-to-action {
-	display: none;	
+	display: none;
 }
 .post-title-hidden .content-area {
     margin-top: 0;
@@ -800,7 +757,7 @@ blockquote,
 ## WooCommerce
 -----------------------------------------------*/
 .woocommerce .page-title {
-	margin: 0;	
+	margin: 0;
 }
 .woocommerce p.buttons a.button:hover {
     background-image: none;
