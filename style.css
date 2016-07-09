@@ -20,7 +20,6 @@ Tags: custom-background, custom-colors, custom-menu, editor-style, responsive-la
 	## Positioning
 	## Typography
 	## Titles
-	## Links
 	## Buttons
 	## Et Cetera
 # Header
@@ -253,14 +252,6 @@ h2 i.fa {
 }
 .entry-title span {
 	padding: 0 15px;
-}
-
-/*-----------------------------------------------
-## Links
------------------------------------------------*/
-/* Removes blue box in Chrome */
-*:focus {
-	outline: 0;
 }
 
 /*-----------------------------------------------
