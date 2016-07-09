@@ -28,8 +28,6 @@ Tags: custom-background, custom-colors, custom-menu, editor-style, responsive-la
 	## Main Menu
 	## Other Menus
 	## Social Menus
-# GridBLocks
-	## Positioning
 # Modules
 	## Global
 	## Alpha
@@ -142,6 +140,13 @@ input[type="submit"]:focus,
 .site-footer a:focus {
 	text-decoration: none;
 }
+
+/* Icons */
+.mod-icon-box {
+	font-size: 65px;
+}
+
+/* xs */
 #slogan,
 .entry-title,
 .menu-social li a,
@@ -153,16 +158,7 @@ input[type="submit"]:focus,
 .mod-beta .p-button-primary,
 .site-footer p,
 .site-info,
-.attribution {
-	text-align: center;
-}
-
-/* Icons */
-.mod-icon-box {
-	font-size: 65px;
-}
-
-/* xs */
+.attribution,
 .xs-center,
 .mod-img,
 .mod-img-circle,
@@ -411,7 +407,6 @@ hr {
 -----------------------------------------------*/
 .navbar {
 	border: none;
-	/* Border Radius */
 	-webkit-border-radius: 0;
 	-moz-border-radius: 0;
 	border-radius: 0;
@@ -517,26 +512,6 @@ li.menu-social:after {
 }
 
 /*------------------------------------------------------------------------
-# GridBlocks
-------------------------------------------------------------------------*/
-
-/*-----------------------------------------------
-## Positioning
------------------------------------------------*/
-.gridblock h1,
-.gridblock h2,
-.gridblock h3,
-.gridblock h4,
-.gridblock h5,
-.gridblock h6,
-.gridblock ol,
-.gridblock ul,
-.gridblock li,
-.gridblock p {
-	margin: 10px 0;
-}
-
-/*------------------------------------------------------------------------
 # Modules
 ------------------------------------------------------------------------*/
 
@@ -549,7 +524,6 @@ li.menu-social:after {
 }
 .mod-divider a {
 	padding: 10px 20px;
-	/* Border Radius */
 	-webkit-border-bottom-right-radius: 7px;
 	-webkit-border-bottom-left-radius: 7px;
 	-moz-border-radius-bottomright: 7px;
@@ -661,7 +635,6 @@ blockquote,
 	overflow: hidden;
 	position: relative;
 	width: 130px;
-	/* Border Radius */
 	-webkit-border-radius: 100px;
 	-moz-border-radius: 100px;
 	-ms-border-radius: 100px;
@@ -675,7 +648,6 @@ blockquote,
 }
 .mod-icon-box span.fa {
 	vertical-align: baseline !important;
-	/* Transform */
 	-webkit-transform: translate(0, 20px);
 	-moz-transform: translate(0, 20px);
 	-o-transform: translate(0, 20px);
