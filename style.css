@@ -737,13 +737,3 @@ blockquote,
 	display: table;
 	margin: 0 auto;
 }
-
-/** Sticky Footer **/
-html, body, .site, .site-content {
-	height: 100%;
-}
-#boldgrid-sticky-wrap {
-	min-height: 100%;
-	height: auto !important;
-	height: 100%;
-}
