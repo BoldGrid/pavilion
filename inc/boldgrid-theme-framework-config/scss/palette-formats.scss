@@ -4,7 +4,7 @@
 .palette-primary {
 	background: $palette-primary-neutral-color;
 	color: $text-contrast-palette-primary-neutral-color;
-	
+
 	.site-content,
 	.row.header-9.header-10 {
 		background-color: $palette-primary-neutral-color;
@@ -36,12 +36,12 @@
 	.navbar-default .navbar-nav > .active > a,
 	.navbar-default .navbar-nav > .active > a:hover,
 	.navbar-default .navbar-nav > .active > a:focus,
-	.navbar-default .navbar-nav > .open > a, 
-	.navbar-default .navbar-nav > .open > a:hover, 
+	.navbar-default .navbar-nav > .open > a,
+	.navbar-default .navbar-nav > .open > a:hover,
 	.navbar-default .navbar-nav > .open > a:focus,
 	.navbar-default .navbar-nav > .current-menu-parent > a,
-	.navbar-default .navbar-nav .dropdown .dropdown-menu > .active > a, 
-	.navbar-default .navbar-nav .dropdown .dropdown-menu > .active > a:hover, 
+	.navbar-default .navbar-nav .dropdown .dropdown-menu > .active > a,
+	.navbar-default .navbar-nav .dropdown .dropdown-menu > .active > a:hover,
 	.navbar-default .navbar-nav .dropdown .dropdown-menu > .active > a:focus,
 	.navbar-default .navbar-nav .dropdown .dropdown-menu > li > a:hover,
 	.navbar-default .navbar-nav .dropdown .dropdown-menu > li > a:focus {
@@ -50,7 +50,7 @@
 	}
 	.navbar-default .navbar-toggle:hover .icon-bar,
 	.navbar-default .navbar-toggle:focus .icon-bar {
-	    background-color: $text-contrast-palette-primary_1;
+		background-color: $text-contrast-palette-primary_1;
 	}
 	a,
 	.well a,
@@ -177,9 +177,9 @@
 		background: $palette-primary_4;
 	}
 	.site-footer,
-	.site-info, 
-	.site-info a, 
-	.attribution-theme-mods, 
+	.site-info,
+	.site-info a,
+	.attribution-theme-mods,
 	.attribution-theme-mods a,
 	.footer-center-menu a,
 	.footer-center-items li::after,
@@ -239,7 +239,9 @@
 	&.disabled-footer .site-footer a {
 		color: $text-contrast-palette-primary-neutral-color;
 	}
-	.entry-title > * {
+	.entry-title a,
+	.entry-title a:hover,
+	.entry-title a:focus {
 		background: $palette-primary-neutral-color;
 		color: $palette-primary_1;
 	}
@@ -329,9 +331,9 @@
 	.widget-area {
 	    border: 1px solid #ccc;
 	}
-	.woocommerce #respond input#submit, 
+	.woocommerce #respond input#submit,
 	.woocommerce a.button,
-	.woocommerce button.button, 
+	.woocommerce button.button,
 	.woocommerce input.button,
 	.woocommerce p.buttons a.button {
 	    background-color: #a46497;
@@ -344,7 +346,7 @@
 
 	/* custom */
 	@media (min-width: 790px) {
-		.site-content .main:after, 
+		.site-content .main:after,
 		.site-content .main:before {
 		    -webkit-border-image: -webkit-gradient(linear, 0 0, 0 100%, from(#b3b3b3), to(rgba(0, 0, 0, 0))) 1 100%;
 		    -webkit-border-image: -webkit-linear-gradient(#b3b3b3, rgba(0, 0, 0, 0)) 1 100%;
