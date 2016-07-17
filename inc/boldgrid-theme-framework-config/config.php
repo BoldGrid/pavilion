@@ -5,7 +5,6 @@ function boldgrid_theme_framework_config( $boldgrid_framework_configs ) {
 	 */
 	$boldgrid_framework_configs['theme_name'] = 'boldgrid-pavilion'; // Text domain
 
-
 	// Enable Sticky Footer.
 	$boldgrid_framework_configs['scripts']['boldgrid-sticky-footer'] = true;
 
@@ -26,10 +25,6 @@ function boldgrid_theme_framework_config( $boldgrid_framework_configs ) {
 
 	// Select the footer template to use.
 	$boldgrid_framework_configs['template']['footer'] = 'generic';
-
-	// Set the container classes per template
-	$boldgrid_framework_configs['template']['pages']['default']['container_class'] = 'container';
-	$boldgrid_framework_configs['template']['pages']['page_home.php']['container_class'] = 'container';
 
 	// Assign Locations for Generic Header.
 	$boldgrid_framework_configs['template']['locations']['header'] = array(
