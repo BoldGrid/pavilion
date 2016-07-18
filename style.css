@@ -137,6 +137,8 @@ Tags: custom-background, custom-colors, custom-menu, editor-style, responsive-la
 .site-footer a {
 	text-decoration: underline;
 }
+.entry-title a:hover,
+.entry-title a:focus,
 .button-primary:hover,
 .button-primary:focus,
 .button-secondary:hover,
