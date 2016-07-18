@@ -54,32 +54,32 @@ Tags: custom-background, custom-colors, custom-menu, editor-style, responsive-la
 
 /* sm */
 @media (min-width: 790px) {
-	.site-content .main {
+	.entry-content .bgtfw.container > .row:first-child {
 		min-height: 225px;
 		position: relative;
 	}
-	.site-content .main:after,
-	.site-content .main:before {
+	.entry-content .bgtfw.container > .row:first-child:after,
+	.entry-content .bgtfw.container > .row:first-child:before {
 		border-width: 2px;
 		border-style: solid;
 		content: "";
 		height: 225px;
 		position: absolute;
-		top: 0;
+		top: 35px;
 	}
-	.site-content .main:after {
+	.entry-content .bgtfw.container > .row:first-child:after {
 		right: -4px;
 	}
-	.site-content .main:before {
+	.entry-content .bgtfw.container > .row:first-child:before {
 		left: -4px;
 	}
 }
 
 /* md */
 @media (min-width: 992px) {
-	.site-content .main:after,
-	.site-content .main:before {
-		top: 45px;
+	.entry-content .bgtfw.container > .row:first-child:after,
+	.entry-content .bgtfw.container > .row:first-child:before {
+		top: 35px;
 	}
 }
 
@@ -126,8 +126,6 @@ Tags: custom-background, custom-colors, custom-menu, editor-style, responsive-la
 .site-footer a {
 	text-decoration: underline;
 }
-.entry-title a:hover,
-.entry-title a:focus,
 .button-primary:hover,
 .button-primary:focus,
 .button-secondary:hover,

@@ -346,12 +346,12 @@
 
 	/* custom */
 	@media (min-width: 790px) {
-		.site-content .main:after,
-		.site-content .main:before {
-		    -webkit-border-image: -webkit-gradient(linear, 0 0, 0 100%, from(#b3b3b3), to(rgba(0, 0, 0, 0))) 1 100%;
-		    -webkit-border-image: -webkit-linear-gradient(#b3b3b3, rgba(0, 0, 0, 0)) 1 100%;
-		    -moz-border-image: -moz-linear-gradient(#b3b3b3, rgba(0, 0, 0, 0)) 1 100%;
-		    -o-border-image: -o-linear-gradient(#b3b3b3, rgba(0, 0, 0, 0)) 1 100%;
+		.entry-content .bgtfw.container > .row:first-child:after,
+		.entry-content .bgtfw.container > .row:first-child:before {
+			-webkit-border-image: -webkit-gradient(linear, 0 0, 0 100%, from(#b3b3b3), to(rgba(0, 0, 0, 0))) 1 100%;
+			-webkit-border-image: -webkit-linear-gradient(#b3b3b3, rgba(0, 0, 0, 0)) 1 100%;
+			-moz-border-image: -moz-linear-gradient(#b3b3b3, rgba(0, 0, 0, 0)) 1 100%;
+			-o-border-image: -o-linear-gradient(#b3b3b3, rgba(0, 0, 0, 0)) 1 100%;
 		}
 	}
 }
