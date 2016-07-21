@@ -26,9 +26,6 @@ function boldgrid_theme_framework_config( $boldgrid_framework_configs ) {
 	// Select the footer template to use.
 	$boldgrid_framework_configs['template']['footer'] = 'generic';
 
-	// Remove the sidebar from single blog post page for this theme.
-	$boldgrid_framework_configs['template']['sidebar'][] = 'is_single';
-
 	// Assign Locations for Generic Header.
 	$boldgrid_framework_configs['template']['locations']['header'] = array(
 		'6' => array( '[action]boldgrid_site_identity' ),
