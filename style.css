@@ -705,6 +705,11 @@ blockquote,
 .error404 .call-to-action-wrapper {
 	display: none;
 }
+/* Search Page */
+.search .jumbotron {
+	background: none;
+	text-align: center;
+}
 /*------------------------------------------------------------------------
 # Posts
 ------------------------------------------------------------------------*/
