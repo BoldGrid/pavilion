@@ -368,7 +368,6 @@ hr {
 }
 .entry-header {
 	position: relative;
-	z-index: 99;
 	padding: 0px 15px;
 }
 .phone .h3.alt-font {
