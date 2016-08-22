@@ -542,10 +542,12 @@ li.menu-social:after {
 ## Global
 -----------------------------------------------*/
 .mod-divider {
+	display: flex;
+	line-height: normal;
 	margin: 4em 0;
-	padding-top: 0.9em;
 }
 .mod-divider a {
+	margin: 0 auto;
 	padding: 10px 20px;
 	-webkit-border-bottom-right-radius: 7px;
 	-webkit-border-bottom-left-radius: 7px;
