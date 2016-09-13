@@ -49,7 +49,7 @@ Tags: custom-background, custom-colors, custom-menu, editor-style, responsive-la
 .site-content .main {
 	position: relative;
 	top: -45px;
-	padding: 0;
+	padding: 0 15px;
 }
 
 /* sm */
@@ -72,7 +72,7 @@ Tags: custom-background, custom-colors, custom-menu, editor-style, responsive-la
 	}
 	.page-template-default .entry-content > .bgtfw.container > .row:first-child:after,
 	.page-template-default .entry-content > .bgtfw.container > .row:first-child:before {
-		top: -75px;
+		top: 0px;
 	}
 	.entry-content > .bgtfw.container > .row:first-child:after {
 		right: -4px;
@@ -90,12 +90,7 @@ Tags: custom-background, custom-colors, custom-menu, editor-style, responsive-la
 	}
 	.page-template-default .entry-content > .bgtfw.container > .row:first-child:after,
 	.page-template-default .entry-content > .bgtfw.container > .row:first-child:before {
-		top: -64px;
-	}
-	.site-content .main {
-		position: relative;
-		top: -45px;
-		padding: 0 15px;
+		top: -75px;
 	}
 }
 
@@ -270,13 +265,6 @@ h2 i.fa {
 }
 .entry-title span {
 	padding: 0 15px;
-}
-
-/* md */
-@media (min-width: 992px) {
-	.entry-title {
-		margin: 10px 0 60px;
-	}
 }
 
 /*-----------------------------------------------
@@ -603,7 +591,6 @@ blockquote,
 
 /* xs */
 .mod-alpha {
-	margin-top: 2em;
 	margin-bottom: 1em;
 	text-align: center;
 }
@@ -736,10 +723,6 @@ blockquote,
 }
 .post-title-hidden .content-area {
 	margin-top: 0;
-}
-.widget.well {
-	clear: both;
-	margin-bottom: 3em;
 }
 
 /* Comments */
