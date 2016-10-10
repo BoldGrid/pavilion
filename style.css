@@ -717,9 +717,6 @@ blockquote,
 	padding: 25px;
 	margin-top: 25px;
 }
-.single .call-to-action {
-	display: none;
-}
 .post-title-hidden .content-area {
 	margin-top: 0;
 }
