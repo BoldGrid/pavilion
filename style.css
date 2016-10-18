@@ -106,9 +106,17 @@ Tags: custom-background, custom-colors, custom-menu, editor-style, responsive-la
 	margin: 0;
 }
 
+/* xs */
 .page-template-page_home .entry-content {
-	margin-top: 10px;
+	margin-top: 20px;
 }
+
+/* sm */
+@media (min-width: 768px) {
+	.page-template-page_home .entry-content {
+		margin-top: 10px;
+	}
+}	
 
 /*-----------------------------------------------
 ## Typography
