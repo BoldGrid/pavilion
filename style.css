@@ -385,8 +385,20 @@ hr {
 }
 
 /* Widgets */
+.site-header .well {
+	margin-bottom: 45px;
+}
+
+/* xs */
 #header-widget-area {
-	margin: 0;
+	margin-bottom: 30px;
+}
+
+/* sm */
+@media (min-width: 768px) {
+	#header-widget-area {
+		margin: 0;
+	}
 }
 
 /* xs */
