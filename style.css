@@ -151,6 +151,9 @@ input[type="submit"]:focus,
 .site-footer a:focus {
 	text-decoration: none;
 }
+h1 {
+	line-height: 1.3;
+}
 
 /* Icons */
 .mod-icon-box {
