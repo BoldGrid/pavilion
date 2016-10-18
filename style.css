@@ -427,6 +427,13 @@ hr {
 .navbar-default .navbar-nav {
 	margin-left: -15px;
 }
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+	border: none;
+}
+.navbar-collapse {
+	box-shadow: none;
+}
 
 /* Links */
 .navbar-default .navbar-nav > li > a {
