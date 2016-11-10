@@ -44,7 +44,9 @@
 	.navbar-default .navbar-nav .dropdown .dropdown-menu > .active > a:hover,
 	.navbar-default .navbar-nav .dropdown .dropdown-menu > .active > a:focus,
 	.navbar-default .navbar-nav .dropdown .dropdown-menu > li > a:hover,
-	.navbar-default .navbar-nav .dropdown .dropdown-menu > li > a:focus {
+	.navbar-default .navbar-nav .dropdown .dropdown-menu > li > a:focus,
+	.nav > li > a:focus,
+	.nav > li > a:hover {
 		background: $palette-primary_1;
 		color: $text-contrast-palette-primary_1;
 	}
@@ -73,6 +75,9 @@
 	.navbar,
 	.site-footer {
 		border-top: 2px solid $palette-primary_1;
+	}
+	.site-header .well {
+		border: 1px solid $palette-primary_1;
 	}
 
 	/*-----------------------------------------------
@@ -178,6 +183,7 @@
 	}
 	.site-footer,
 	.site-footer a,
+	#footer-widget-area .nav > li > a:hover,
 	.site-info,
 	.site-info a,
 	.attribution-theme-mods,
@@ -186,7 +192,9 @@
 	.footer-center-items li::after,
 	.boldgrid-framework-menu li::after,
 	.navbar-default .navbar-nav > li > a,
-	.navbar-default .navbar-nav .open .dropdown-menu > li > a {
+	.navbar-default .navbar-nav .open .dropdown-menu > li > a,
+	.site-footer .widget.well,
+	.site-footer caption {
 		color: $text-contrast-palette-primary_4;
 	}
 	.navbar-default .navbar-toggle .icon-bar {
@@ -225,7 +233,8 @@
 	.background-primary,
 	#boldgrid-sticky-push,
 	#boldgrid-sticky-filler,
-	.palette-primary.mce-content-body {
+	.palette-primary.mce-content-body,
+	.site-header .widget.well {
 		background: $palette-primary-neutral-color;
 		color: $text-contrast-palette-primary-neutral-color;
 	}
@@ -298,12 +307,7 @@
 	/*-----------------------------------------------
 	## Et Cetera
 	-----------------------------------------------*/
-	.well .widget-title {
-	    color: #8c8c8c;
-	}
-	.panel-body,
-	#footer-widget-area th,
-	#footer-widget-area td {
+	.panel-body {
 	    color: #333;
 	}
 
