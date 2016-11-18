@@ -236,6 +236,8 @@ add_filter( 'boldgrid_theme_framework_config', 'boldgrid_theme_framework_config'
  */
 function filter_logo_controls( $controls ) {
 	$controls['logo_margin_top']['default'] = 5;
+	unset( $controls['logo_line_height']['output'][0]['units'] );
+	$controls['logo_line_height']['output'][0]['value_pattern'] =  'calc( $% + 30% )';
 
 	// Controls above will override framework defaults
 	return $controls;
