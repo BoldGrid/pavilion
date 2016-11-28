@@ -344,6 +344,11 @@ hr {
 	border: none;
 	box-shadow: none;
 }
+.blog .site-content .main,
+.archive .site-content .main,
+.single .site-content .main {
+	top: 0;
+}
 
 /*------------------------------------------------------------------------
 # Header

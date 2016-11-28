@@ -46,7 +46,8 @@
 	.navbar-default .navbar-nav .dropdown .dropdown-menu > li > a:hover,
 	.navbar-default .navbar-nav .dropdown .dropdown-menu > li > a:focus,
 	.nav > li > a:focus,
-	.nav > li > a:hover {
+	.nav > li > a:hover,
+	.pager li > a {
 		background: $palette-primary_1;
 		color: $text-contrast-palette-primary_1;
 	}
@@ -98,7 +99,9 @@
 	input[type="submit"]:hover,
 	input[type="submit"]:focus,
 	.form-submit .submit:hover,
-	.form-submit .submit:focus {
+	.form-submit .submit:focus,
+	.pager li > a:hover,
+	.pager li > a:focus {
 		background: $palette-primary_2;
 		color: $text-contrast-palette-primary_2;
 	}
@@ -162,6 +165,7 @@
 	.link-secondary,
 	blockquote p,
 	.mod-blockquote p,
+	blockquote,
 	.comments-title,
 	.comment-reply-title,
 	.gridblock .heading-alt,
