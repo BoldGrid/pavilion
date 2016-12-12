@@ -249,6 +249,9 @@ h2 i.fa {
 .hentry {
 	margin: 0 auto;
 }
+.hentry:first-child ~ .hentry {
+	margin-top: 50px;
+}
 .heading {
 	margin-bottom: 15px;
 }
@@ -750,6 +753,7 @@ blockquote,
 	background: none;
 	text-align: center;
 }
+
 /*------------------------------------------------------------------------
 # Posts
 ------------------------------------------------------------------------*/
@@ -759,6 +763,9 @@ blockquote,
 }
 .post-title-hidden .content-area {
 	margin-top: 0;
+}
+.nav-links {
+	margin: 25px 0;
 }
 
 /* Comments */
