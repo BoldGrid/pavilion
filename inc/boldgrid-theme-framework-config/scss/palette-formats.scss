@@ -80,6 +80,9 @@
 	.site-header .well {
 		border: 1px solid $palette-primary_1;
 	}
+	.panel-default {
+		border-color: $palette-primary_1;
+	}
 
 	/*-----------------------------------------------
 	## 2
@@ -238,7 +241,10 @@
 	#boldgrid-sticky-push,
 	#boldgrid-sticky-filler,
 	.palette-primary.mce-content-body,
-	.site-header .widget.well {
+	.site-header .widget.well,
+	.panel-default > .panel-heading,
+	.panel-body,
+	.panel-footer {
 		background: $palette-primary-neutral-color;
 		color: $text-contrast-palette-primary-neutral-color;
 	}
@@ -311,10 +317,6 @@
 	/*-----------------------------------------------
 	## Et Cetera
 	-----------------------------------------------*/
-	.panel-body {
-	    color: #333;
-	}
-
 	.navbar-default .navbar-toggle {
 	    border-color: #ddd;
 	}
