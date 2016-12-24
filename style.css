@@ -445,8 +445,6 @@ hr {
 -----------------------------------------------*/
 .navbar {
 	border: none;
-	-webkit-border-radius: 0;
-	-moz-border-radius: 0;
 	border-radius: 0;
 }
 .navbar-nav > li > .dropdown-menu {
@@ -682,9 +680,6 @@ blockquote,
 	overflow: hidden;
 	position: relative;
 	width: 130px;
-	-webkit-border-radius: 100px;
-	-moz-border-radius: 100px;
-	-ms-border-radius: 100px;
 	border-radius: 100px;
 }
 .mod-icon-box span {
@@ -695,9 +690,6 @@ blockquote,
 }
 .mod-icon-box span.fa {
 	vertical-align: baseline !important;
-	-webkit-transform: translate(0, 20px);
-	-moz-transform: translate(0, 20px);
-	-o-transform: translate(0, 20px);
 	transform: translate(0, 20px);
 }
 
