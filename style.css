@@ -54,16 +54,16 @@ Tags: custom-background, custom-colors, custom-menu, editor-style, responsive-la
 /* sm */
 @media (min-width: 790px) {
 	.entry-content > .bgtfw.container > .row:first-child {
-		min-height: 225px;
 		position: relative;
+		min-height: 225px;
 	}
 	.entry-content > .bgtfw.container > .row:first-child:after,
 	.entry-content > .bgtfw.container > .row:first-child:before {
+		position: absolute;
+		height: 225px;
 		border-width: 2px;
 		border-style: solid;
 		content: "";
-		height: 225px;
-		position: absolute;
 	}
 	.page-template-page_home .entry-content > .bgtfw.container > .row:first-child:after,
 	.page-template-page_home .entry-content > .bgtfw.container > .row:first-child:before {
@@ -71,7 +71,7 @@ Tags: custom-background, custom-colors, custom-menu, editor-style, responsive-la
 	}
 	.page-template-default .entry-content > .bgtfw.container > .row:first-child:after,
 	.page-template-default .entry-content > .bgtfw.container > .row:first-child:before {
-		top: 0px;
+		top: 0;
 	}
 	.entry-content > .bgtfw.container > .row:first-child:after {
 		right: -4px;
@@ -97,8 +97,8 @@ Tags: custom-background, custom-colors, custom-menu, editor-style, responsive-la
 ## Positioning
 -----------------------------------------------*/
 .content-area {
-	margin-bottom: 60px;
 	margin-top: -45px;
+	margin-bottom: 60px;
 }
 .page-content,
 .entry-content,
@@ -116,7 +116,7 @@ Tags: custom-background, custom-colors, custom-menu, editor-style, responsive-la
 	.page-template-page_home .entry-content {
 		margin-top: 10px;
 	}
-}	
+}
 
 /*-----------------------------------------------
 ## Typography
@@ -261,20 +261,20 @@ h2 i.fa {
 
 /* Page Title */
 .entry-title {
-	display: block;
-	margin: 20px 0 60px;
 	position: relative;
 	z-index: 1;
+	display: block;
+	margin: 20px 0 60px;
 }
 .entry-title:before {
-	bottom: 0;
-	content:"";
-	left: 0;
-	margin: 0 auto;
 	position: absolute;
 	right: 0;
-	width: 100%;
+	bottom: 0;
+	left: 0;
 	z-index: -1;
+	margin: 0 auto;
+	width: 100%;
+	content: "";
 }
 .entry-title span {
 	padding: 0 15px;
@@ -296,9 +296,9 @@ input[type="submit"] {
 
 /* Call To Action */
 .call-to-action .button-primary {
-	border: none;
 	margin-left: -15px;
 	padding: 10px 25px;
+	border: none;
 }
 
 /* Positioning */
@@ -339,12 +339,12 @@ input[type="submit"] {
 ## Et Cetera
 -----------------------------------------------*/
 hr {
-	border: 0;
 	height: 2px;
+	border: 0;
 }
 .site-footer .well {
-	background: transparent;
 	border: none;
+	background: transparent;
 	box-shadow: none;
 }
 .blog .site-content .main,
@@ -362,8 +362,8 @@ hr {
 }
 .site-description {
 	display: inline-block;
-	margin-left: -15px;
 	margin-top: -11px;
+	margin-left: -15px;
 	padding: 8px;
 }
 
@@ -391,7 +391,7 @@ hr {
 }
 .entry-header {
 	position: relative;
-	padding: 0px 15px;
+	padding: 0 15px;
 }
 .phone .h3.alt-font {
 	margin-top: 0;
@@ -448,8 +448,8 @@ hr {
 	border-radius: 0;
 }
 .navbar-nav > li > .dropdown-menu {
+	padding: 0;
 	border-radius: 0;
-	padding: 0px;
 }
 .navbar-nav > li > .dropdown-menu a {
 	padding-top: 10px;
@@ -478,12 +478,12 @@ hr {
 }
 
 #site-navigation {
-	margin: 0px -15px;
+	margin: 0 -15px;
 }
 
 #site-navigation .navbar-header,
 #site-navigation .navbar-collapse {
-	margin-right: 0px;
+	margin-right: 0;
 }
 
 /*-----------------------------------------------
@@ -502,17 +502,17 @@ hr {
 
 #secondary-menu,
 #tertiary-menu {
-	background-color: transparent;
-	padding: 0;
 	margin: 0;
+	padding: 0;
+	background-color: transparent;
 	text-align: right;
 }
 
 #secondary-menu-items,
 #tertiary-menu-items {
 	display: inline-block;
-	padding: 10px;
 	margin: 0 -15px 0 0;
+	padding: 10px;
 }
 
 #footer-center-menu {
@@ -533,17 +533,17 @@ hr {
 ## Social Menus
 -----------------------------------------------*/
 .menu-social ul {
-	padding-left: 0px;
+	padding-left: 0;
 }
 .menu-social ul li {
 	position: relative;
-	display:  inline-block;
+	display: inline-block;
 }
 .menu-social li a {
-	border-radius: 50%;
 	display: inline-block;
-	margin-right: 0.5em;
 	margin-top: 1.25em;
+	margin-right: .5em;
+	border-radius: 50%;
 	vertical-align: top;
 }
 #primary-navbar li.menu-social a[href]:hover,
@@ -563,17 +563,17 @@ li.menu-social:after {
 -----------------------------------------------*/
 .mod-divider {
 	display: flex;
-	line-height: normal;
 	margin: 4em 0;
+	line-height: normal;
 }
 .mod-divider a {
 	margin: 0 auto;
 	padding: 10px 20px;
 	-webkit-border-bottom-right-radius: 7px;
-	-webkit-border-bottom-left-radius: 7px;
 	-moz-border-radius-bottomright: 7px;
-	-moz-border-radius-bottomleft: 7px;
 	border-bottom-right-radius: 7px;
+	-webkit-border-bottom-left-radius: 7px;
+	-moz-border-radius-bottomleft: 7px;
 	border-bottom-left-radius: 7px;
 }
 blockquote,
@@ -585,8 +585,8 @@ blockquote,
 ## Alpha
 -----------------------------------------------*/
 .mod-alpha {
-	border-radius: 5px;
 	padding-bottom: 10px;
+	border-radius: 5px;
 }
 .mod-alpha img {
 	padding: 0;
@@ -595,9 +595,9 @@ blockquote,
 	margin-left: 20px;
 }
 .mod-alpha h5 {
+	margin-top: 20px;
 	margin-bottom: 10px;
 	margin-left: -1px;
-	margin-top: 20px;
 	padding: 0 1.5em;
 }
 .mod-alpha hr {
@@ -607,8 +607,8 @@ blockquote,
 	padding: 0 1.5em;
 }
 .mod-alpha hr {
-	border: 0;
 	height: 1px;
+	border: 0;
 }
 .mod-alpha i {
 	padding-right: 15px;
@@ -617,16 +617,16 @@ blockquote,
 	padding-right: 12px;
 }
 .mod-alpha-1 p {
-	margin-bottom: 0;
 	margin-top: 20px;
+	margin-bottom: 0;
 }
 .mod-alpha .p-button-secondary {
 	margin: 15px;
 }
 .mod-alpha .button-secondary {
+	padding: 7px 15px;
 	border-radius: 3px;
 	font-size: 12px;
-	padding: 7px 15px;
 }
 
 /* xs */
@@ -659,15 +659,15 @@ blockquote,
 ## Beta
 -----------------------------------------------*/
 .mod-beta {
-	border-radius: 5px;
 	padding: 3em 3em 0;
+	border-radius: 5px;
 }
 .mod-beta hr {
 	margin-top: 0;
 }
 .mod-beta .p-button-primary {
-	margin-bottom: -20px;
 	margin-top: 30px;
+	margin-bottom: -20px;
 }
 
 /* Icons */
@@ -675,18 +675,18 @@ blockquote,
 	margin: -115px auto 0;
 }
 .mod-icon-box {
-	border-style: double;
-	height: 130px;
-	overflow: hidden;
 	position: relative;
+	overflow: hidden;
 	width: 130px;
+	height: 130px;
+	border-style: double;
 	border-radius: 100px;
 }
 .mod-icon-box span {
-	display: block;
-	height: 130px;
 	position: absolute;
+	display: block;
 	width: 130px;
+	height: 130px;
 }
 .mod-icon-box span.fa {
 	vertical-align: baseline !important;
@@ -701,8 +701,8 @@ blockquote,
 /* md */
 @media (min-width: 992px) {
 	.mod-beta {
-		margin-bottom: 2em;
 		margin-top: 60px;
+		margin-bottom: 2em;
 	}
 }
 
@@ -710,8 +710,8 @@ blockquote,
 ## Gamma
 -----------------------------------------------*/
 .mod-gamma {
-	padding-left: 15px;
 	padding-right: 15px;
+	padding-left: 15px;
 }
 .mod-gamma [class*="col-md"] {
 	padding: 0;
@@ -720,9 +720,9 @@ blockquote,
 	margin-bottom: 30px;
 }
 .mod-gamma-2 ul {
-	list-style: none;
-	padding-bottom: 32px;
 	padding-top: 10px;
+	padding-bottom: 32px;
+	list-style: none;
 }
 .mod-gamma-2 li {
 	margin-left: -20px;
@@ -733,8 +733,8 @@ blockquote,
 ------------------------------------------------------------------------*/
 /* 404 Page */
 .error404 .list-group-item {
-	background: transparent;
 	border: none;
+	background: transparent;
 }
 /* CTA makes 404 hardly visible below the fold */
 .error404 .call-to-action-wrapper {
@@ -750,8 +750,8 @@ blockquote,
 # Posts
 ------------------------------------------------------------------------*/
 .widget-area {
-	padding: 25px;
 	margin-top: 25px;
+	padding: 25px;
 }
 .post-title-hidden .content-area {
 	margin-top: 0;
@@ -774,9 +774,9 @@ blockquote,
 
 /* Forms */
 .form-submit .submit {
-	border: medium none;
 	margin-top: 15px;
 	padding: 7px 30px;
+	border: medium none;
 	transition: all .5s;
 }
 
