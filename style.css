@@ -295,10 +295,13 @@ input[type="submit"] {
 }
 
 /* Call To Action */
+.woocommerce .call-to-action .button-primary,
 .call-to-action .button-primary {
 	margin-left: -15px;
 	padding: 10px 25px;
 	border: none;
+	line-height: inherit;
+	font-size: initial;
 }
 
 /* Positioning */
