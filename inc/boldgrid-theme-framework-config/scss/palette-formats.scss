@@ -47,7 +47,9 @@
 	.navbar-default .navbar-nav .dropdown .dropdown-menu > li > a:focus,
 	.nav > li > a:focus,
 	.nav > li > a:hover,
-	.pager li > a {
+	.pager li > a,
+	.mark,
+	mark {
 		background: $palette-primary_1;
 		color: $text-contrast-palette-primary_1;
 	}
