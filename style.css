@@ -295,6 +295,7 @@ input[type="submit"] {
 }
 
 /* Call To Action */
+.woocommerce .call-to-action .button-primary,
 .woocommerce-page .call-to-action .button-primary,
 .call-to-action .button-primary {
 	margin-left: -15px;
