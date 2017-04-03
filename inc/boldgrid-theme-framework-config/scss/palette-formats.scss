@@ -180,6 +180,9 @@
 	.menu-social .fa-inverse:focus {
 		color: $text-contrast-palette-primary_3;
 	}
+	#reviews #comments ol.commentlist li .comment-text {
+		border: 1px solid $palette-primary_3;
+	}
 
 	/*-----------------------------------------------
 	## 4
@@ -249,7 +252,8 @@
 		color: $text-contrast-palette-primary-neutral-color;
 	}
 	caption,
-	h3 {
+	h3,
+	#reviews #comments ol.commentlist li .meta {
 		color: $text-contrast-palette-primary-neutral-color;
 	}
 	&.disabled-footer .entry-footer,

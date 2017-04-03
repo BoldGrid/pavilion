@@ -772,6 +772,9 @@ blockquote,
 	float: left;
 	padding-right: 15px;
 }
+.panel {
+	background: transparent;
+}
 .panel-default > .panel-heading {
 	border: none;
 }
