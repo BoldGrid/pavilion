@@ -54,16 +54,17 @@ Tags: custom-background, custom-colors, custom-menu, editor-style, responsive-la
 /* sm */
 @media (min-width: 790px) {
 	.entry-content > .bgtfw.container > .row:first-child {
-		position: relative;
 		min-height: 225px;
+		position: relative;
 	}
 	.entry-content > .bgtfw.container > .row:first-child::after,
 	.entry-content > .bgtfw.container > .row:first-child::before {
-		position: absolute;
-		height: 225px;
-		border-width: 2px;
-		border-style: solid;
 		content: "";
+		border-style: solid;
+		border-width: 2px;
+		height: 225px;
+		position: absolute;
+		
 	}
 	.page-template-page_home .entry-content > .bgtfw.container > .row:first-child::after,
 	.page-template-page_home .entry-content > .bgtfw.container > .row:first-child::before {
@@ -97,8 +98,8 @@ Tags: custom-background, custom-colors, custom-menu, editor-style, responsive-la
 ## Positioning
 -----------------------------------------------*/
 .content-area {
-	margin-top: -45px;
 	margin-bottom: 60px;
+	margin-top: -45px;
 }
 .page-content,
 .entry-content,
@@ -262,19 +263,19 @@ h2 i.fa {
 /* Page Title */
 .entry-title {
 	display: block;
+	margin: 20px 0 60px;
 	position: relative;
 	z-index: 1;
-	margin: 20px 0 60px;
 }
 .entry-title::before {
-	position: absolute;
-	z-index: -1;
-	right: 0;
 	bottom: 0;
-	left: 0;
-	width: 100%;
-	margin: 0 auto;
 	content: "";
+	left: 0;
+	margin: 0 auto;
+	position: absolute;
+	right: 0;
+	width: 100%;
+	z-index: -1;
 }
 .entry-title span {
 	padding: 0 15px;
@@ -298,11 +299,11 @@ input[type="submit"] {
 .woocommerce .call-to-action .button-primary,
 .woocommerce-page .call-to-action .button-primary,
 .call-to-action .button-primary {
+	border: none;
+	font-size: initial;
+	line-height: inherit;
 	margin-left: -15px;
 	padding: 10px 25px;
-	border: none;
-	line-height: inherit;
-	font-size: initial;
 }
 
 /* Positioning */
@@ -343,12 +344,12 @@ input[type="submit"] {
 ## Et Cetera
 -----------------------------------------------*/
 hr {
-	height: 2px;
 	border: 0;
+	height: 2px;
 }
 .site-footer .well {
-	border: none;
 	background: transparent;
+	border: none;	
 	box-shadow: none;
 }
 .blog .site-content .main,
@@ -366,8 +367,8 @@ hr {
 }
 .site-description {
 	display: inline-block;
-	margin-top: -11px;
 	margin-left: -15px;
+	margin-top: -11px;
 	padding: 8px;
 }
 
@@ -394,8 +395,8 @@ hr {
 	margin-left: 5px;
 }
 .entry-header {
-	position: relative;
 	padding: 0 15px;
+	position: relative;
 }
 .phone .h3.alt-font {
 	margin-top: 0;
@@ -452,12 +453,12 @@ hr {
 	border-radius: 0;
 }
 .navbar-nav > li > .dropdown-menu {
-	padding: 0;
 	border-radius: 0;
+	padding: 0;
 }
 .navbar-nav > li > .dropdown-menu a {
-	padding-top: 10px;
 	padding-bottom: 10px;
+	padding-top: 10px;
 }
 .navbar-default {
 	margin-bottom: 0;
@@ -506,9 +507,9 @@ hr {
 
 #secondary-menu,
 #tertiary-menu {
+	background-color: transparent;
 	margin: 0;
 	padding: 0;
-	background-color: transparent;
 	text-align: right;
 }
 
@@ -544,10 +545,10 @@ hr {
 	position: relative;
 }
 .menu-social li a {
-	display: inline-block;
-	margin-top: 1.25em;
-	margin-right: 0.5em;
 	border-radius: 50%;
+	display: inline-block;
+	margin-right: 0.5em;
+	margin-top: 1.25em;
 	vertical-align: top;
 }
 #primary-navbar li.menu-social a[href]:hover,
@@ -567,8 +568,8 @@ li.menu-social::after {
 -----------------------------------------------*/
 .mod-divider {
 	display: flex;
-	margin: 4em 0;
 	line-height: normal;
+	margin: 4em 0;
 }
 .mod-divider a {
 	margin: 0 auto;
@@ -589,8 +590,8 @@ blockquote,
 ## Alpha
 -----------------------------------------------*/
 .mod-alpha {
-	padding-bottom: 10px;
 	border-radius: 5px;
+	padding-bottom: 10px;
 }
 .mod-alpha img {
 	padding: 0;
@@ -599,9 +600,9 @@ blockquote,
 	margin-left: 20px;
 }
 .mod-alpha h5 {
-	margin-top: 20px;
 	margin-bottom: 10px;
 	margin-left: -1px;
+	margin-top: 20px;	
 	padding: 0 1.5em;
 }
 .mod-alpha hr {
@@ -611,8 +612,8 @@ blockquote,
 	padding: 0 1.5em;
 }
 .mod-alpha hr {
-	height: 1px;
 	border: 0;
+	height: 1px;
 }
 .mod-alpha i {
 	padding-right: 15px;
@@ -621,16 +622,16 @@ blockquote,
 	padding-right: 12px;
 }
 .mod-alpha-1 p {
+	margin-bottom: 0;	
 	margin-top: 20px;
-	margin-bottom: 0;
 }
 .mod-alpha .p-button-secondary {
 	margin: 15px;
 }
 .mod-alpha .button-secondary {
-	padding: 7px 15px;
 	border-radius: 3px;
 	font-size: 12px;
+	padding: 7px 15px;
 }
 
 /* xs */
@@ -663,15 +664,15 @@ blockquote,
 ## Beta
 -----------------------------------------------*/
 .mod-beta {
-	padding: 3em 3em 0;
 	border-radius: 5px;
+	padding: 3em 3em 0;
 }
 .mod-beta hr {
 	margin-top: 0;
 }
 .mod-beta .p-button-primary {
-	margin-top: 30px;
 	margin-bottom: -20px;
+	margin-top: 30px;
 }
 
 /* Icons */
@@ -679,22 +680,22 @@ blockquote,
 	margin: -115px auto 0;
 }
 .mod-icon-box {
+	border-radius: 100px;
+	border-style: double;
+	height: 130px;
 	overflow: hidden;
 	position: relative;
-	width: 130px;
-	height: 130px;
-	border-style: double;
-	border-radius: 100px;
+	width: 130px;	
 }
 .mod-icon-box span {
 	display: block;
+	height: 130px;
 	position: absolute;
 	width: 130px;
-	height: 130px;
 }
 .mod-icon-box span.fa {
-	vertical-align: baseline !important;
 	transform: translate(0, 20px);
+	vertical-align: baseline !important;
 }
 
 /* xs */
@@ -705,8 +706,8 @@ blockquote,
 /* md */
 @media (min-width: 992px) {
 	.mod-beta {
-		margin-top: 60px;
 		margin-bottom: 2em;
+		margin-top: 60px;
 	}
 }
 
@@ -714,8 +715,8 @@ blockquote,
 ## Gamma
 -----------------------------------------------*/
 .mod-gamma {
-	padding-right: 15px;
 	padding-left: 15px;
+	padding-right: 15px;
 }
 .mod-gamma [class*="col-md"] {
 	padding: 0;
@@ -724,9 +725,9 @@ blockquote,
 	margin-bottom: 30px;
 }
 .mod-gamma-2 ul {
-	padding-top: 10px;
-	padding-bottom: 32px;
 	list-style: none;
+	padding-bottom: 32px;
+	padding-top: 10px;	
 }
 .mod-gamma-2 li {
 	margin-left: -20px;
@@ -737,13 +738,15 @@ blockquote,
 ------------------------------------------------------------------------*/
 /* 404 Page */
 .error404 .list-group-item {
-	border: none;
 	background: transparent;
+	border: none;
 }
+
 /* CTA makes 404 hardly visible below the fold */
 .error404 .call-to-action-wrapper {
 	display: none;
 }
+
 /* Search Page */
 .search .jumbotron {
 	background: none;
@@ -778,9 +781,9 @@ blockquote,
 
 /* Forms */
 .form-submit .submit {
+	border: medium none;
 	margin-top: 15px;
 	padding: 7px 30px;
-	border: medium none;
 	transition: all 0.5s;
 }
 
@@ -793,9 +796,6 @@ blockquote,
 -----------------------------------------------*/
 .woocommerce .page-title {
 	margin: 0;
-}
-.woocommerce p.buttons a.button:hover {
-	background-image: none;
 }
 
 /*------------------------------------------------------------------------
