@@ -774,6 +774,8 @@ blockquote,
 }
 .panel {
 	background: transparent;
+	border: none;
+	box-shadow: none;
 }
 .panel-default > .panel-heading {
 	border: none;
