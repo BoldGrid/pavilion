@@ -188,21 +188,18 @@ function boldgrid_theme_framework_config( $boldgrid_framework_configs ) {
 	/**
 	 * Widgets
 	 */
-	$widget_markup['call-to-action'] = <<<HTML
+	$widget_markup['call-to-action'] = '
 		<div class="row call-to-action-wrapper">
 			<div class="col-md-7"></div>
 			<div class="col-md-5">
-				<h2 id="slogan">$cta_h2</h2>
+				<h2 id="slogan">' . $cta_h2 . '</h2>
 				<div class="call-to-action">
-					<p class="p-button-primary"><a class="button-primary" href="about-us">LEARN MORE<i class="fa fa-angle-double-right"></i></a></p>
+					<p class="p-button-primary"><a class="button-primary" href="' . get_site_url( null, 'about-us' ) . '">LEARN MORE<i class="fa fa-angle-double-right"></i></a></p>
 				</div>
 			</div>
-		</div>
-HTML;
+		</div>';
 
-	$widget_markup['phone-number'] = <<<HTML
-	<div class="phone"><p class="h3 alt-font"><i class="fa fa-phone"></i> Call Today <span class="phone-number">777-765-4321</span></p></div>
-HTML;
+	$widget_markup['phone-number'] = '<div class="phone"><p class="h3 alt-font"><i class="fa fa-phone"></i> Call Today <span class="phone-number">777-765-4321</span></p></div>';
 
 	// Widget 1
 	$boldgrid_framework_configs['widget']['widget_instances']['boldgrid-widget-1'][] = array (
