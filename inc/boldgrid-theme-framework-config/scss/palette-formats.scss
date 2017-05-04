@@ -357,6 +357,16 @@
 			-o-border-image: -o-linear-gradient(#b3b3b3, rgba(0, 0, 0, 0)) 1 100%;
 		}
 	}
+
+	/*-----------------------------------------------
+	## WooCommerce
+	-----------------------------------------------*/	
+	&.woocommerce div.product .stock.out-of-stock {
+		color: $palette-primary_1;
+	}
+	&.woocommerce div.product .stock {
+		color: $text-contrast-palette-primary-neutral-color;
+	}
 }
 
 body.palette-primary.page-template-default h2 {
