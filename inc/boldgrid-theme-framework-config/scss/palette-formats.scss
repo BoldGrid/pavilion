@@ -82,7 +82,7 @@
 	.site-header .well {
 		border: 1px solid $palette-primary_1;
 	}
-	.panel-default, {
+	.panel-default {
 		border-color: $palette-primary_1;
 	}
 
@@ -310,8 +310,8 @@
 	/* sm */
 	@media (min-width: 768px) {
 		.navbar-default .navbar-nav .open .dropdown-menu > li > a {
-			background: $palette-primary_2;
-			color: $text-contrast-palette-primary_2;
+			background: $palette-primary_4;
+			color: $text-contrast-palette-primary_4;
 		}
 		ul.nav li.dropdown:hover {
 			background-color: $palette-primary_1;
