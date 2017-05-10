@@ -82,7 +82,7 @@
 	.site-header .well {
 		border: 1px solid $palette-primary_1;
 	}
-	.panel-default {
+	.panel-default, {
 		border-color: $palette-primary_1;
 	}
 
@@ -212,6 +212,9 @@
 	.navbar-default .navbar-toggle .icon-bar {
 		background-color: $text-contrast-palette-primary_4;
 	}
+	.navbar-default .navbar-toggle {
+		border-color: $text-contrast-palette-primary_4;
+	}
 	.dropdown-menu {
 		background: $palette-primary_4;
 		color: $text-contrast-palette-primary_4;
@@ -327,9 +330,6 @@
 	/*-----------------------------------------------
 	## Et Cetera
 	-----------------------------------------------*/
-	.navbar-default .navbar-toggle {
-	    border-color: #ddd;
-	}
 	.mod-alpha img {
 		border: 3px solid #fff;
 		/* Box Shadow */
