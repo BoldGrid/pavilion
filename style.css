@@ -479,6 +479,12 @@ a.select2-choice:hover {
 .navbar-collapse {
 	box-shadow: none;
 }
+.nav .open > a,
+.nav .open > a:focus,
+.nav .open > a:hover {
+	background: none;
+	border: none; 
+}
 
 /* Links */
 .navbar-default .navbar-nav > li > a {
