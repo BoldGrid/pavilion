@@ -1,4 +1,9 @@
 /*------------------------------------------------------------------------
+# Variables
+------------------------------------------------------------------------*/
+$rgba_3 : rgba($palette-primary_3, 0.75);
+
+/*------------------------------------------------------------------------
 # Palettes
 ------------------------------------------------------------------------*/
 .palette-primary {
@@ -149,9 +154,33 @@
 	## 3
 	-----------------------------------------------*/
 	.mod-divider a,
-	.button-secondary {
+	.button-secondary,
+	.wc-gallery-captions-show .gallery-caption,
+	.wc-gallery-captions-onpopup .gallery-caption {
 	    background: $palette-primary_3;
 	    color: $text-contrast-palette-primary_3;
+	}
+	.wc-gallery-captions-showon .gallery-caption, 
+	.wc-gallery-captions-onhover .gallery-caption {
+		background: $rgba_3;
+		color: $text-contrast-palette-primary_3;
+	}
+	.menu-social .fa-inverse:hover,
+	.menu-social .fa-inverse:focus,
+	.wc-gallery .gallery-caption h2,
+	.wc-gallery .gallery-caption h3,
+	.wc-gallery .gallery-caption h4,
+	.wc-gallery .gallery-caption h5,
+	.wc-gallery .gallery-caption h6,
+	.wc-gallery .gallery-caption p {
+		color: $text-contrast-palette-primary_3;
+	}
+	
+	/* Magnific Pop-up for gallery */
+	.mfp-title h2,
+	.mfp-title h3,
+	.mfp-title h5 {
+		color: #fff !important;
 	}
 	.mod-divider {
 		border-top: 2px solid $palette-primary_3;
@@ -178,10 +207,7 @@
 	#primary-navbar li.menu-social a[href]:hover {
 		color: $palette-primary_3;
 	}
-	.menu-social .fa-inverse:hover,
-	.menu-social .fa-inverse:focus {
-		color: $text-contrast-palette-primary_3;
-	}
+
 	#reviews #comments ol.commentlist li .comment-text {
 		border: 1px solid $palette-primary_3;
 	}
