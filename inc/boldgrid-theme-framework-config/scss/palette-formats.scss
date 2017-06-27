@@ -25,9 +25,6 @@
 		color: $palette-primary_1;
 	}
 	.button-primary,
-	input[type="submit"],
-	a.comment-reply-link,
-	.form-submit .submit,
 	.table-striped > tbody > tr:nth-child(2n+1),
 	.navbar-default .navbar-toggle:hover,
 	.navbar-default .navbar-toggle:focus,
@@ -59,14 +56,11 @@
 	}
 	a,
 	.well a,
-	.link-primary,
 	.nav-links a,
-	.widget-area a,
 	.entry-meta a,
 	li.menu-social a,
 	.entry-footer a,
 	.menu-social li a,
-	.site-info .well a,
 	#footer-widget-area a:hover,
 	#primary-navbar li.menu-social a,
 	.menu-social .current_page_item a {
@@ -101,10 +95,6 @@
 	.button-primary:focus,
 	.button-secondary:hover,
 	.button-secondary:focus,
-	input[type="submit"]:hover,
-	input[type="submit"]:focus,
-	.form-submit .submit:hover,
-	.form-submit .submit:focus,
 	.pager li > a:hover,
 	.pager li > a:focus {
 		background: $palette-primary_2;
@@ -174,8 +164,10 @@
 	.comments-title,
 	.comment-reply-title,
 	.gridblock .heading-alt,
-	li.menu-social a[href]:hover,
-	#primary-navbar li.menu-social a[href]:hover {
+	li.menu-social a:hover,
+	li.menu-social a:focus,
+	#primary-navbar li.menu-social a:hover,
+	#primary-navbar li.menu-social a:focus {
 		color: $palette-primary_3;
 	}
 	.menu-social .fa-inverse:hover,
@@ -196,10 +188,7 @@
 	.site-footer,
 	.site-footer a,
 	#footer-widget-area .nav > li > a:hover,
-	.site-info,
-	.site-info a,
 	.attribution-theme-mods,
-	.attribution-theme-mods a,
 	.footer-center-menu a,
 	.footer-center-items li::after,
 	.boldgrid-framework-menu li::after,
@@ -248,7 +237,6 @@
 	/*-----------------------------------------------
 	## Neutral
 	-----------------------------------------------*/
-	.social,
 	.background-primary,
 	#boldgrid-sticky-push,
 	#boldgrid-sticky-filler,
@@ -283,9 +271,6 @@
 	/*-----------------------------------------------
 	## 1 - Description, Alpha Buttons, Navbar Hover
 	-----------------------------------------------*/
-	#masthead .site-description {
-		color: $text-contrast-palette-primary_1;
-	}
 	.mod-alpha .button-secondary,
 	.navbar-default .navbar-nav > li > a:hover,
 	.navbar-default .navbar-nav > li > a:focus,
@@ -302,10 +287,6 @@
 		background: $palette-primary_1;
 		color: $text-contrast-palette-primary_1;
 	}
-
-	/*.navbar-default .navbar-nav > .current-menu-parent > a {
-		background: $palette-primary_1;
-	}*/
 
 	/* sm */
 	@media (min-width: 768px) {
@@ -347,9 +328,6 @@
 		-moz-box-shadow: 0px 5px 5px 0px rgba(85,85,85,1);
 		box-shadow: 0px 5px 5px 0px rgba(85,85,85,1);
 	}
-	.widget-area {
-	    border: 1px solid #ccc;
-	}
 
 	/* custom */
 	@media (min-width: 790px) {
@@ -360,16 +338,6 @@
 			-moz-border-image: -moz-linear-gradient(#b3b3b3, rgba(0, 0, 0, 0)) 1 100%;
 			-o-border-image: -o-linear-gradient(#b3b3b3, rgba(0, 0, 0, 0)) 1 100%;
 		}
-	}
-
-	/*-----------------------------------------------
-	## WooCommerce
-	-----------------------------------------------*/	
-	&.woocommerce div.product .stock.out-of-stock {
-		color: $palette-primary_1;
-	}
-	&.woocommerce div.product .stock {
-		color: $text-contrast-palette-primary-neutral-color;
 	}
 }
 

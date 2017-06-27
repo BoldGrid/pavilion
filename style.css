@@ -64,7 +64,6 @@ Tags: custom-background, custom-colors, custom-menu, editor-style, responsive-la
 		border-width: 2px;
 		height: 225px;
 		position: absolute;
-		
 	}
 	.page-template-page_home .entry-content > .bgtfw.container > .row:first-child::after,
 	.page-template-page_home .entry-content > .bgtfw.container > .row:first-child::before {
@@ -131,10 +130,6 @@ Tags: custom-background, custom-colors, custom-menu, editor-style, responsive-la
 .mod-gamma-2 li:first-child {
 	font-weight: 700;
 }
-.p-button-primary,
-.p-button-secondary {
-	white-space: nowrap;
-}
 .menu-social li a {
 	-webkit-font-smoothing: antialiased;
 }
@@ -151,11 +146,7 @@ Tags: custom-background, custom-colors, custom-menu, editor-style, responsive-la
 .button-primary:focus,
 .button-secondary:hover,
 .button-secondary:focus,
-input[type="submit"]:hover,
-input[type="submit"]:focus,
 .mod-divider a,
-.woocommerce p.buttons a.button:hover,
-.woocommerce p.buttons a.button:focus,
 .site-footer a:hover,
 .site-footer a:focus {
 	text-decoration: none;
@@ -177,8 +168,6 @@ input[type="submit"]:focus,
 .mod-beta p,
 .mod-beta .p-button-primary,
 .site-footer,
-.site-info,
-.attribution,
 .xs-center,
 .mod-img,
 .mod-img-circle,
@@ -282,9 +271,9 @@ h2 i.fa {
 ## Buttons
 -----------------------------------------------*/
 .button-primary,
-.button-secondary,
-input[type="submit"] {
+.button-secondary {
 	border: none;
+	padding: 7px 30px;
 }
 
 /* Icons */
@@ -308,11 +297,6 @@ input[type="submit"] {
 .p-button-secondary {
 	margin: 25px 0 50px;
 	padding: 7px 0;
-}
-.button-primary,
-.button-secondary,
-input[type="submit"] {
-	padding: 7px 30px;
 }
 .gridblock .p-button-secondary {
 	margin: -25px 0 50px;
@@ -480,7 +464,6 @@ a.select2-choice:hover {
 .nav .open > a:focus,
 .nav .open > a:hover {
 	background: none;
-	border: none; 
 }
 
 /* Links */
@@ -494,7 +477,6 @@ a.select2-choice:hover {
 #site-navigation {
 	margin: 0 -15px;
 }
-
 #site-navigation .navbar-header,
 #site-navigation .navbar-collapse {
 	margin-right: 0;
@@ -516,12 +498,10 @@ a.select2-choice:hover {
 
 #secondary-menu,
 #tertiary-menu {
-	background-color: transparent;
 	margin: 0;
 	padding: 0;
 	text-align: right;
 }
-
 #secondary-menu-items,
 #tertiary-menu-items {
 	display: inline-block;
@@ -546,13 +526,6 @@ a.select2-choice:hover {
 /*-----------------------------------------------
 ## Social Menus
 -----------------------------------------------*/
-.menu-social ul {
-	padding-left: 0;
-}
-.menu-social ul li {
-	display: inline-block;
-	position: relative;
-}
 .menu-social li a {
 	border-radius: 50%;
 	display: inline-block;
@@ -611,7 +584,7 @@ blockquote,
 .mod-alpha h5 {
 	margin-bottom: 10px;
 	margin-left: -1px;
-	margin-top: 20px;	
+	margin-top: 20px;
 	padding: 0 1.5em;
 }
 .mod-alpha hr {
@@ -631,7 +604,7 @@ blockquote,
 	padding-right: 12px;
 }
 .mod-alpha-1 p {
-	margin-bottom: 0;	
+	margin-bottom: 0;
 	margin-top: 20px;
 }
 .mod-alpha .p-button-secondary {
@@ -736,7 +709,7 @@ blockquote,
 .mod-gamma-2 ul {
 	list-style: none;
 	padding-bottom: 32px;
-	padding-top: 10px;	
+	padding-top: 10px;
 }
 .mod-gamma-2 li {
 	margin-left: -20px;
@@ -765,10 +738,6 @@ blockquote,
 /*------------------------------------------------------------------------
 # Posts
 ------------------------------------------------------------------------*/
-.widget-area {
-	margin-top: 25px;
-	padding: 25px;
-}
 .post-title-hidden .content-area {
 	margin-top: 0;
 }
@@ -777,10 +746,6 @@ blockquote,
 }
 
 /* Comments */
-.comment-form-comment label {
-	float: left;
-	padding-right: 15px;
-}
 .panel {
 	background: transparent;
 	border: none;
@@ -791,14 +756,6 @@ blockquote,
 }
 .panel-footer {
 	border-top: 1px solid transparent;
-}
-
-/* Forms */
-.form-submit .submit {
-	border: medium none;
-	margin-top: 15px;
-	padding: 7px 30px;
-	transition: all 0.5s;
 }
 
 /*------------------------------------------------------------------------
