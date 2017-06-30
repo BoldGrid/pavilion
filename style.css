@@ -228,9 +228,8 @@ Tags: custom-background, custom-colors, custom-menu, editor-style, responsive-la
 .mod-beta h3 {
 	margin: 1em 0;
 }
-
 .entry-title > * {
-	padding: 0 15px;
+	padding: 0 10px;
 }
 
 /* Headings */
@@ -269,6 +268,9 @@ h2 i.fa {
 }
 .entry-title span {
 	padding: 0 15px;
+}
+h1.entry-title {
+	line-height: 1.2;
 }
 
 /*-----------------------------------------------
@@ -386,7 +388,6 @@ a.select2-choice:hover {
 	margin-left: 5px;
 }
 .entry-header {
-	padding: 0 15px;
 	position: relative;
 }
 .phone .h3.alt-font {
