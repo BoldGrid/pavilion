@@ -287,9 +287,7 @@
 		background: $palette-primary_1;
 		color: $text-contrast-palette-primary_1;
 	}
-
-	/* sm */
-	@media (min-width: 768px) {
+	@media only screen and (min-width: 768px) {
 		.navbar-default .navbar-nav .open .dropdown-menu > li > a {
 			background: $palette-primary_4;
 			color: $text-contrast-palette-primary_4;
@@ -328,9 +326,7 @@
 		-moz-box-shadow: 0px 5px 5px 0px rgba(85,85,85,1);
 		box-shadow: 0px 5px 5px 0px rgba(85,85,85,1);
 	}
-
-	/* custom */
-	@media (min-width: 790px) {
+	@media only screen and (min-width: 768px) {
 		.entry-content .bgtfw.container > .row:first-child:after,
 		.entry-content .bgtfw.container > .row:first-child:before {
 			-webkit-border-image: -webkit-gradient(linear, 0 0, 0 100%, from(#b3b3b3), to(rgba(0, 0, 0, 0))) 1 100%;
