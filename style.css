@@ -50,10 +50,6 @@ Tags: custom-background, custom-colors, custom-menu, editor-style, responsive-la
 	position: relative;
 	top: -45px;
 }
-.home .site-content .main {
-	position: relative;
-	top: 0;
-}
 
 /* Small devices (tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
