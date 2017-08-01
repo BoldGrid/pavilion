@@ -779,3 +779,7 @@ blockquote,
 .attribution-theme-mods {
 	margin: 0 auto;
 }
+/* Page Edit Links */
+.bgtfw-edit-links-shown.page .site-content {
+	margin-bottom: -45px;
+}
