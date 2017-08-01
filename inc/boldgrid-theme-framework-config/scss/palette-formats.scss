@@ -59,7 +59,6 @@
 	.nav-links a,
 	.entry-meta a,
 	li.menu-social a,
-	.entry-footer a,
 	.menu-social li a,
 	#footer-widget-area a:hover,
 	#primary-navbar li.menu-social a,
@@ -253,7 +252,6 @@
 	#reviews #comments ol.commentlist li .meta {
 		color: $text-contrast-palette-primary-neutral-color;
 	}
-	&.disabled-footer .entry-footer,
 	&.disabled-footer .site-footer {
 	    background-color: $palette-primary-neutral-color;
 	    border-top: none;
