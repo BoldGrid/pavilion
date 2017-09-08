@@ -232,12 +232,6 @@ Tags: custom-background, custom-colors, custom-menu, editor-style, responsive-la
 h2 i.fa {
 	padding-right: 10px;
 }
-.hentry {
-	margin: 0 auto;
-}
-.hentry:first-child ~ .hentry {
-	margin-top: 50px;
-}
 .heading {
 	margin-bottom: 15px;
 }
@@ -740,6 +734,9 @@ blockquote,
 }
 .nav-links {
 	margin: 25px 0;
+}
+.post {
+	margin: 0 auto 50px;
 }
 
 /* Comments */
