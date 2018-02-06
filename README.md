@@ -6,7 +6,7 @@
 - License: GNU General Public License v2 or later
 - License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-BoldGrid Theme best suited for Real Estate, Fitness, Home Repair, Property Management, Consulting, and Marketing sites.
+BoldGrid Theme best suited for Real Estate, Fitness, Home Repair, Consulting, and Marketing sites.
 
 ## Information & Changelog
 [BoldGrid.com - Pavilion](https://www.boldgrid.com/themes/pavilion/)
