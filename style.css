@@ -46,13 +46,12 @@ Tags: custom-background, custom-colors, custom-menu, editor-style, responsive-la
 /*-----------------------------------------------
 ## Background
 -----------------------------------------------*/
-.site-content .main {
-	position: relative;
-	top: -45px;
-}
-
 /* Small devices (tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
+	.site-content .main {
+		position: relative;
+		top: -45px;
+	}	
 	.entry-content > .bgtfw.container > .row:first-child {
 		min-height: 225px;
 		position: relative;
